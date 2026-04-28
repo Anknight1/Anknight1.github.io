@@ -1,1857 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>第九篇：Agent常用架构：Plan and Execute Agent</title>
-    <url>/2026/03/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-Plan-and-Execute-Agent/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Plan and Execute</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十三篇：Agent常用架构：Multi Agent</title>
-    <url>/2026/03/13/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-Multi-Agent/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Multi Agent</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十二篇：Agent常用架构：Human in the Loop</title>
-    <url>/2026/03/12/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-Human-in-the-Loop/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Human in the Loop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三篇：Agent常用架构：ReAct Agent</title>
-    <url>/2026/03/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-ReAct-Agent/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>ReAct</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十篇：Agent常用架构：ReWOO&amp;LLMCompiler</title>
-    <url>/2026/03/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-ReWOO-LLMCompiler/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>ReWOO</tag>
-        <tag>LLMCompiler</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第五篇：Alibaba-React Agent 初探</title>
-    <url>/2026/03/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/Alibaba-React-Agent%E5%88%9D%E6%8E%A2/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>ReAct</tag>
-        <tag>Alibaba</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十一篇：Agent常用架构：Reflection Agent</title>
-    <url>/2026/03/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-Reflection-Agent/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Reflection</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第六篇：Alibaba-React Agent 核心组件</title>
-    <url>/2026/03/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/Alibaba-React-Agent%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>ReAct</tag>
-        <tag>Alibaba</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第四篇：React Agent的实现方式?</title>
-    <url>/2026/03/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/React-Agent%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>ReAct</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十九篇：ReAct Agent 流式输出后续问题</title>
-    <url>/2026/03/19/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/ReAct-Agent%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA%E5%90%8E%E7%BB%AD%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>ReAct</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十五篇：Spring AI Alibaba中的多智能体支持</title>
-    <url>/2026/03/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/Spring-AI-Alibaba%E4%B8%AD%E7%9A%84%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E6%94%AF%E6%8C%81/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Alibaba</tag>
-        <tag>Spring AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇：什么是AI Agent?</title>
-    <url>/2026/03/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E4%BB%80%E4%B9%88%E6%98%AFAI-Agent/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>大模型</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十四篇：使用AutoGen 构建一代代码生成器</title>
-    <url>/2026/03/14/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E4%BD%BF%E7%94%A8AutoGen%E6%9E%84%E5%BB%BA%E4%B8%80%E4%BB%A3%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>AutoGen</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第七篇：如何给Agent增加持久化记忆</title>
-    <url>/2026/03/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E5%A6%82%E4%BD%95%E7%BB%99Agent%E5%A2%9E%E5%8A%A0%E6%8C%81%E4%B9%85%E5%8C%96%E8%AE%B0%E5%BF%86/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>记忆</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十八篇：实战一：手搓 ReactAgent（流式）</title>
-    <url>/2026/03/18/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E5%AE%9E%E6%88%98%E4%B8%80-%E6%89%8B%E6%90%93ReactAgent-%E6%B5%81%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>ReAct</tag>
-        <tag>实战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十六篇：多智能体协议——A2A</title>
-    <url>/2026/03/16/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E5%8D%8F%E8%AE%AE-A2A/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>A2A</tag>
-        <tag>多智能体</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十一篇：实战三：手搓 PlanExecuteAgent（上）</title>
-    <url>/2026/03/21/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E5%AE%9E%E6%88%98%E4%B8%89-%E6%89%8B%E6%90%93PlanExecuteAgent-%E4%B8%8A/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Plan and Execute</tag>
-        <tag>实战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十七篇：实战一：手搓 ReactAgent（非流式）</title>
-    <url>/2026/03/17/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E5%AE%9E%E6%88%98%E4%B8%80-%E6%89%8B%E6%90%93ReactAgent-%E9%9D%9E%E6%B5%81%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>ReAct</tag>
-        <tag>实战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十二篇：实战三：手搓 PlanExecuteAgent（下）</title>
-    <url>/2026/03/22/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E5%AE%9E%E6%88%98%E4%B8%89-%E6%89%8B%E6%90%93PlanExecuteAgent-%E4%B8%8B/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Plan and Execute</tag>
-        <tag>实战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十篇：实战二：手搓 ReflectionAgent</title>
-    <url>/2026/03/20/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E5%AE%9E%E6%88%98%E4%BA%8C-%E6%89%8B%E6%90%93ReflectionAgent/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Reflection</tag>
-        <tag>实战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十三篇：实战四：手搓 Human in the Loop</title>
-    <url>/2026/03/23/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E5%AE%9E%E6%88%98%E5%9B%9B-%E6%89%8B%E6%90%93Human-in-the-Loop/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Human in the Loop</tag>
-        <tag>实战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二篇：常用的Agent开发框架</title>
-    <url>/2026/03/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E5%B8%B8%E7%94%A8%E7%9A%84Agent%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>开发框架</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第八篇：深入理解 Alibaba-React Agent 原理</title>
-    <url>/2026/03/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Agent/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Alibaba-React-Agent%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Agent</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>ReAct</tag>
-        <tag>Alibaba</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十六篇：MCP与其他协议的区别</title>
-    <url>/2026/01/25/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/MCP%E4%B8%8E%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>协议</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十三篇：MCP 调试工具</title>
-    <url>/2026/01/22/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/MCP%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>调试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十一篇：MCP 如何实现认证鉴权</title>
-    <url>/2026/01/20/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/MCP%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E9%89%B4%E6%9D%83/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>认证鉴权</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第九篇：SSE MCP Server如何实现重连?</title>
-    <url>/2026/01/18/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/SSE-MCP-Server%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%87%8D%E8%BF%9E/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>SSE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第八篇：Spring AI MCP 调用实现原理</title>
-    <url>/2026/01/17/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/Spring-AI-MCP%E8%B0%83%E7%94%A8%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>MCP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇：什么是MCP?</title>
-    <url>/2026/01/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E4%BB%80%E4%B9%88%E6%98%AFMCP/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>大模型</tag>
-        <tag>MCP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第五篇：如何接入MCP Server?</title>
-    <url>/2026/01/14/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E5%A6%82%E4%BD%95%E6%8E%A5%E5%85%A5MCP-Server/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十四篇：如何跳过 MCP 的模型总结</title>
-    <url>/2026/01/23/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87MCP%E7%9A%84%E6%A8%A1%E5%9E%8B%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第七篇：实战：使用Spring AI开发MCP Client</title>
-    <url>/2026/01/16/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E5%AE%9E%E6%88%98-%E4%BD%BF%E7%94%A8Spring-AI%E5%BC%80%E5%8F%91MCP-Client/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>实战</tag>
-        <tag>MCP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十五篇：如何实现 MCP 工具过滤</title>
-    <url>/2026/01/24/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0MCP%E5%B7%A5%E5%85%B7%E8%BF%87%E6%BB%A4/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>工具过滤</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第六篇：实战：使用Spring AI开发MCP Server</title>
-    <url>/2026/01/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E5%AE%9E%E6%88%98-%E4%BD%BF%E7%94%A8Spring-AI%E5%BC%80%E5%8F%91MCP-Server/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>实战</tag>
-        <tag>MCP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十篇：将 MCP 改造为 HTTPS</title>
-    <url>/2026/01/19/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E5%B0%86MCP%E6%94%B9%E9%80%A0%E4%B8%BAHTTPS/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>HTTPS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二篇：深入理解MCP技术原理（上）</title>
-    <url>/2026/01/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E4%B8%8A/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>技术原理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第四篇：深入理解MCP技术原理（下）</title>
-    <url>/2026/01/13/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E4%B8%8B/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>技术原理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三篇：深入理解MCP技术原理（中）</title>
-    <url>/2026/01/12/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E4%B8%AD/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>技术原理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十二篇：神奇的 context-path</title>
-    <url>/2026/01/21/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/MCP/%E7%A5%9E%E5%A5%87%E7%9A%84context-path/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>MCP</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>context-path</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第四篇：Spring AI中的Tool Calling怎么实现的</title>
-    <url>/2026/01/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Function-Call/Spring-AI%E4%B8%AD%E7%9A%84Tool-Calling%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Function Call</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>Tool Calling</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三篇：使用Spring AI做Function Call</title>
-    <url>/2026/01/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Function-Call/%E4%BD%BF%E7%94%A8Spring-AI%E5%81%9AFunction-Call/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Function Call</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>Function Call</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二篇：如何定义一个好的Function（Tool）？</title>
-    <url>/2026/01/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Function-Call/%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84Function/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Function Call</category>
-      </categories>
-      <tags>
-        <tag>大模型</tag>
-        <tag>Function Call</tag>
-        <tag>Tool</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇：什么是Function Call?</title>
-    <url>/2026/01/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Function-Call/%E4%BB%80%E4%B9%88%E6%98%AFFunction-Call/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Function Call</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>大模型</tag>
-        <tag>Function Call</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第五篇：实战：仿PDD自动帮买家申请退款</title>
-    <url>/2026/01/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Function-Call/%E5%AE%9E%E6%88%98-%E4%BB%BFPDD%E8%87%AA%E5%8A%A8%E5%B8%AE%E4%B9%B0%E5%AE%B6%E7%94%B3%E8%AF%B7%E9%80%80%E6%AC%BE/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Function Call</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>实战</tag>
-        <tag>Function Call</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十六篇：LangChain4J中的Modular RAG支持</title>
-    <url>/2026/02/26/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/LangChain4J%E4%B8%AD%E7%9A%84Modular-RAG%E6%94%AF%E6%8C%81/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>LangChain4J</tag>
-        <tag>Modular RAG</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十一篇：RAG优化技术：HyDE</title>
-    <url>/2026/02/21/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-HyDE/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>HyDE</tag>
-        <tag>优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十四篇：RAG优化技术：Graph RAG</title>
-    <url>/2026/02/24/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-Graph-RAG/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>优化</tag>
-        <tag>Graph RAG</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十六篇：RAG优化技术：元数据过滤</title>
-    <url>/2026/02/16/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E5%85%83%E6%95%B0%E6%8D%AE%E8%BF%87%E6%BB%A4/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十九篇：RAG优化技术：查询构造</title>
-    <url>/2026/02/19/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E6%9F%A5%E8%AF%A2%E6%9E%84%E9%80%A0/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十八篇：RAG优化技术：查询路由</title>
-    <url>/2026/02/18/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E6%9F%A5%E8%AF%A2%E8%B7%AF%E7%94%B1/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十二篇：RAG优化技术：混合检索</title>
-    <url>/2026/02/22/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E6%B7%B7%E5%90%88%E6%A3%80%E7%B4%A2/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>优化</tag>
-        <tag>混合检索</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十三篇：RAG优化技术：重排序</title>
-    <url>/2026/02/23/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E9%87%8D%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>优化</tag>
-        <tag>重排序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十七篇：RAG优化技术：问题改写</title>
-    <url>/2026/02/17/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E9%97%AE%E9%A2%98%E6%94%B9%E5%86%99/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第五篇：RAG的范式演进</title>
-    <url>/2026/02/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E7%9A%84%E8%8C%83%E5%BC%8F%E6%BC%94%E8%BF%9B/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十四篇：Spring AI 和 LangChain4J中文档处理功能</title>
-    <url>/2026/02/14/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/Spring-AI%E5%92%8CLangChain4J%E4%B8%AD%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>RAG</tag>
-        <tag>LangChain4J</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十五篇：Spring AI中的Modular RAG支持</title>
-    <url>/2026/02/25/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/Spring-AI%E4%B8%AD%E7%9A%84Modular-RAG%E6%94%AF%E6%8C%81/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>RAG</tag>
-        <tag>Modular RAG</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十篇：RAG优化技术：问题澄清</title>
-    <url>/2026/02/20/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E9%97%AE%E9%A2%98%E6%BE%84%E6%B8%85/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十八篇：Spring AI 和 LangChain4J的模块化RAG功能</title>
-    <url>/2026/02/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/Spring-AI%E5%92%8CLangChain4J%E7%9A%84%E6%A8%A1%E5%9D%97%E5%8C%96RAG%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>RAG</tag>
-        <tag>LangChain4J</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇：什么是RAG?</title>
-    <url>/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E4%BB%80%E4%B9%88%E6%98%AFRAG/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>大模型</tag>
-        <tag>RAG</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第九篇：什么是父子分片?</title>
-    <url>/2026/02/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E4%BB%80%E4%B9%88%E6%98%AF%E7%88%B6%E5%AD%90%E5%88%86%E7%89%87/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>父子分片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第四篇：使用 LlamaIndex 构建一个简单的RAG系统</title>
-    <url>/2026/02/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E4%BD%BF%E7%94%A8LlamaIndex%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84RAG%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>LlamaIndex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十七篇：基于LangChain4J实现简单的RAG检索</title>
-    <url>/2026/02/27/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E5%9F%BA%E4%BA%8ELangChain4J%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84RAG%E6%A3%80%E7%B4%A2/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>LangChain4J</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二十九篇：多模态RAG</title>
-    <url>/2026/03/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E5%A4%9A%E6%A8%A1%E6%80%81RAG/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>多模态</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十一篇：如何使用离线向量模型</title>
-    <url>/2026/02/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E7%A6%BB%E7%BA%BF%E5%90%91%E9%87%8F%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>向量模型</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三十篇：实战：多模态RAG智能问答系统</title>
-    <url>/2026/03/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E5%AE%9E%E6%88%98-%E5%A4%9A%E6%A8%A1%E6%80%81RAG%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>实战</tag>
-        <tag>RAG</tag>
-        <tag>多模态</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十篇：向量数据库如何选型?</title>
-    <url>/2026/02/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A6%82%E4%BD%95%E9%80%89%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>向量数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第七篇：常见文档分片方式</title>
-    <url>/2026/02/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E5%B8%B8%E8%A7%81%E6%96%87%E6%A1%A3%E5%88%86%E7%89%87%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>文档分片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第八篇：文档分片的代码实现</title>
-    <url>/2026/02/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E6%96%87%E6%A1%A3%E5%88%86%E7%89%87%E7%9A%84%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>文档分片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十五篇：检索增强生成</title>
-    <url>/2026/02/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三篇：深入理解RAG技术原理——检索生成</title>
-    <url>/2026/02/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3RAG%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E6%A3%80%E7%B4%A2%E7%94%9F%E6%88%90/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>检索生成</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第六篇：文档预处理</title>
-    <url>/2026/02/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E6%96%87%E6%A1%A3%E9%A2%84%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>文档预处理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二篇：深入理解RAG技术原理——索引构建</title>
-    <url>/2026/02/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3RAG%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E7%B4%A2%E5%BC%95%E6%9E%84%E5%BB%BA/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>索引构建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十三篇：索引构建流程（ETL）总结与查缺补漏</title>
-    <url>/2026/02/13/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E7%B4%A2%E5%BC%95%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8BETL%E6%80%BB%E7%BB%93%E4%B8%8E%E6%9F%A5%E7%BC%BA%E8%A1%A5%E6%BC%8F/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>ETL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十二篇：Agent Skills的安全问题</title>
-    <url>/2026/05/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/Agent-Skills%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Skills</tag>
-        <tag>安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十二篇：相似度搜索的常见算法</title>
-    <url>/2026/02/12/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/RAG/%E7%9B%B8%E4%BC%BC%E5%BA%A6%E6%90%9C%E7%B4%A2%E7%9A%84%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>RAG</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>相似度搜索</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十一篇：Claude Code中的Skills实现原理</title>
-    <url>/2026/05/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/Claude-Code%E4%B8%AD%E7%9A%84Skills%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Skills</tag>
-        <tag>Claude Code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三篇：Claude Code中如何使用Skills</title>
-    <url>/2026/04/30/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/Claude-Code%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Skills/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Skills</tag>
-        <tag>Claude Code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第九篇：OpenCode（CC的开源版）中的Skills的实现</title>
-    <url>/2026/05/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/OpenCode%E4%B8%AD%E7%9A%84Skills%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Skills</tag>
-        <tag>OpenCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十三篇：Hermes Agent的Skill自进化机制</title>
-    <url>/2026/05/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/Hermes-Agent%E7%9A%84Skill%E8%87%AA%E8%BF%9B%E5%8C%96%E6%9C%BA%E5%88%B6/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Skills</tag>
-        <tag>Hermes Agent</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十篇：Spring AI中Skill集成的实现原理</title>
-    <url>/2026/05/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/Spring-AI%E4%B8%ADSkill%E9%9B%86%E6%88%90%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>Skills</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二篇：Skill的渐进式披露</title>
-    <url>/2026/04/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/Skill%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%8A%AB%E9%9C%B2/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Skills</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第七篇：SpringAI中如何使用Skill?（Agent）</title>
-    <url>/2026/05/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/SpringAI%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Skill-Agent/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Spring AI</tag>
-        <tag>Skills</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第八篇：SpringAI中如何使用Skill?（ChatClient）</title>
-    <url>/2026/05/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/SpringAI%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Skill-ChatClient/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Spring AI</tag>
-        <tag>Skills</tag>
-        <tag>ChatClient</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第四篇：实战：开发一个简历评估的Skill</title>
-    <url>/2026/05/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/%E5%AE%9E%E6%88%98-%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8E%86%E8%AF%84%E4%BC%B0%E7%9A%84Skill/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>实战</tag>
-        <tag>Skills</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇：什么是Agent Skills，为什么需要他?</title>
-    <url>/2026/04/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/%E4%BB%80%E4%B9%88%E6%98%AFAgent-Skills%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E4%BB%96/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Skills</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第六篇：一些好用的Skills推荐</title>
-    <url>/2026/05/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84Skills%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Skills</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第五篇：简历评估Skills讲解</title>
-    <url>/2026/05/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Skills/%E7%AE%80%E5%8E%86%E8%AF%84%E4%BC%B0Skills%E8%AE%B2%E8%A7%A3/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Skills</category>
-      </categories>
-      <tags>
-        <tag>Skills</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第三篇：Mem0的实现原理</title>
-    <url>/2026/04/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/Mem0%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
+    <url>/2026/04/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%83%E3%80%81%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/Mem0%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -1872,7 +23,7 @@
   </entry>
   <entry>
     <title>第四篇：Spring AI Alibaba接入Mem0做长期记忆</title>
-    <url>/2026/04/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/Spring-AI-Alibaba%E6%8E%A5%E5%85%A5Mem0%E5%81%9A%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/</url>
+    <url>/2026/04/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%83%E3%80%81%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/Spring-AI-Alibaba%E6%8E%A5%E5%85%A5Mem0%E5%81%9A%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -1887,15 +38,36 @@
         <category>长期记忆</category>
       </categories>
       <tags>
-        <tag>Alibaba</tag>
         <tag>Spring AI</tag>
+        <tag>Alibaba</tag>
+        <tag>长期记忆</tag>
+        <tag>Mem0</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：长期记忆实现方案——Mem0</title>
+    <url>/2026/04/27/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%83%E3%80%81%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88-Mem0/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>长期记忆</category>
+      </categories>
+      <tags>
         <tag>长期记忆</tag>
         <tag>Mem0</tag>
       </tags>
   </entry>
   <entry>
     <title>第一篇：什么是长期记忆</title>
-    <url>/2026/04/26/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/%E4%BB%80%E4%B9%88%E6%98%AF%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/</url>
+    <url>/2026/04/26/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%83%E3%80%81%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/%E4%BB%80%E4%B9%88%E6%98%AF%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -1915,8 +87,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第二篇：长期记忆实现方案——Mem0</title>
-    <url>/2026/04/27/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88-Mem0/</url>
+    <title>第四篇：Spring AI中的Tool Calling怎么实现的</title>
+    <url>/2026/01/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%80%E3%80%81Function-Call/Spring-AI%E4%B8%AD%E7%9A%84Tool-Calling%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -1928,16 +100,16 @@
 ]]></content>
       <categories>
         <category>大模型学习</category>
-        <category>长期记忆</category>
+        <category>Function Call</category>
       </categories>
       <tags>
-        <tag>长期记忆</tag>
-        <tag>Mem0</tag>
+        <tag>Spring AI</tag>
+        <tag>Tool Calling</tag>
       </tags>
   </entry>
   <entry>
-    <title>第十六篇：Agent、AI Workflow、Agentic Workflow傻傻分不清</title>
-    <url>/2026/04/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/Agent-AI-Workflow-Agentic-Workflow%E5%82%BB%E5%82%BB%E5%88%86%E4%B8%8D%E6%B8%85/</url>
+    <title>第一篇：什么是Function Call?</title>
+    <url>/2026/01/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%80%E3%80%81Function-Call/%E4%BB%80%E4%B9%88%E6%98%AFFunction-Call/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -1949,17 +121,82 @@
 ]]></content>
       <categories>
         <category>大模型学习</category>
-        <category>Workflow</category>
+        <category>Function Call</category>
       </categories>
       <tags>
-        <tag>Agent</tag>
-        <tag>Workflow</tag>
-        <tag>Agentic</tag>
+        <tag>Spring AI</tag>
+        <tag>Function Call</tag>
+        <tag>大模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三篇：使用Spring AI做Function Call</title>
+    <url>/2026/01/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%80%E3%80%81Function-Call/%E4%BD%BF%E7%94%A8Spring-AI%E5%81%9AFunction-Call/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Function Call</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>Function Call</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：如何定义一个好的Function（Tool）？</title>
+    <url>/2026/01/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%80%E3%80%81Function-Call/%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84Function/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Function Call</category>
+      </categories>
+      <tags>
+        <tag>Function Call</tag>
+        <tag>大模型</tag>
+        <tag>Tool</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第五篇：实战：仿PDD自动帮买家申请退款</title>
+    <url>/2026/01/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%80%E3%80%81Function-Call/%E5%AE%9E%E6%88%98-%E4%BB%BFPDD%E8%87%AA%E5%8A%A8%E5%B8%AE%E4%B9%B0%E5%AE%B6%E7%94%B3%E8%AF%B7%E9%80%80%E6%AC%BE/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Function Call</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>Function Call</tag>
+        <tag>实战</tag>
       </tags>
   </entry>
   <entry>
     <title>第十三篇：Agentic Workflow</title>
-    <url>/2026/04/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/Agentic-Workflow/</url>
+    <url>/2026/04/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/Agentic-Workflow/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -1979,8 +216,52 @@
       </tags>
   </entry>
   <entry>
+    <title>第十六篇：Agent、AI Workflow、Agentic Workflow傻傻分不清</title>
+    <url>/2026/04/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/Agent-AI-Workflow-Agentic-Workflow%E5%82%BB%E5%82%BB%E5%88%86%E4%B8%8D%E6%B8%85/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>Workflow</tag>
+        <tag>Agentic</tag>
+        <tag>Agent</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第七篇：Dify进阶：RAG的使用</title>
+    <url>/2026/03/31/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/Dify%E8%BF%9B%E9%98%B6-RAG%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>Workflow</tag>
+        <tag>Dify</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第十二篇：Dify &amp; N8N &amp; Coze &amp; FastGPT对比</title>
-    <url>/2026/04/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/Dify-N8N-Coze-FastGPT%E5%AF%B9%E6%AF%94/</url>
+    <url>/2026/04/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/Dify-N8N-Coze-FastGPT%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2004,7 +285,7 @@
   </entry>
   <entry>
     <title>第十篇：Dify进阶：API调用</title>
-    <url>/2026/04/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/Dify%E8%BF%9B%E9%98%B6-API%E8%B0%83%E7%94%A8/</url>
+    <url>/2026/04/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/Dify%E8%BF%9B%E9%98%B6-API%E8%B0%83%E7%94%A8/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2025,95 +306,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第七篇：Dify进阶：RAG的使用</title>
-    <url>/2026/03/31/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/Dify%E8%BF%9B%E9%98%B6-RAG%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Workflow</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>Workflow</tag>
-        <tag>Dify</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第八篇：Dify进阶：MCP的使用</title>
-    <url>/2026/04/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/Dify%E8%BF%9B%E9%98%B6-MCP%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Workflow</category>
-      </categories>
-      <tags>
-        <tag>MCP</tag>
-        <tag>Workflow</tag>
-        <tag>Dify</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十五篇：Spring AI Alibaba Graph的使用</title>
-    <url>/2026/04/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/Spring-AI-Alibaba-Graph%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Workflow</category>
-      </categories>
-      <tags>
-        <tag>Alibaba</tag>
-        <tag>Spring AI</tag>
-        <tag>Workflow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三篇：Workflow VS Agent</title>
-    <url>/2026/03/27/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/Workflow-VS-Agent/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Workflow</category>
-      </categories>
-      <tags>
-        <tag>Agent</tag>
-        <tag>Workflow</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第九篇：Dify进阶：插件开发</title>
-    <url>/2026/04/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/Dify%E8%BF%9B%E9%98%B6-%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</url>
+    <url>/2026/04/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/Dify%E8%BF%9B%E9%98%B6-%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2134,8 +328,30 @@
       </tags>
   </entry>
   <entry>
+    <title>第十五篇：Spring AI Alibaba Graph的使用</title>
+    <url>/2026/04/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/Spring-AI-Alibaba-Graph%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>Workflow</tag>
+        <tag>Alibaba</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第十一篇：什么是n8n?</title>
-    <url>/2026/04/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E4%BB%80%E4%B9%88%E6%98%AFn8n/</url>
+    <url>/2026/04/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E4%BB%80%E4%B9%88%E6%98%AFn8n/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2155,8 +371,51 @@
       </tags>
   </entry>
   <entry>
+    <title>第三篇：Workflow VS Agent</title>
+    <url>/2026/03/27/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/Workflow-VS-Agent/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>Workflow</tag>
+        <tag>Agent</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第八篇：Dify进阶：MCP的使用</title>
+    <url>/2026/04/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/Dify%E8%BF%9B%E9%98%B6-MCP%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>Workflow</tag>
+        <tag>Dify</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第十四篇：使用LangGraph实现一个Agentic Workflow</title>
-    <url>/2026/04/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E4%BD%BF%E7%94%A8LangGraph%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAAgentic-Workflow/</url>
+    <url>/2026/04/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E4%BD%BF%E7%94%A8LangGraph%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAAgentic-Workflow/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2177,50 +436,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第一篇：初识Ai Workflow</title>
-    <url>/2026/03/25/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E5%88%9D%E8%AF%86Ai-Workflow/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Workflow</category>
-      </categories>
-      <tags>
-        <tag>大模型</tag>
-        <tag>Workflow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第六篇：基于Dify实现Ai Workflow</title>
-    <url>/2026/03/30/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E5%9F%BA%E4%BA%8EDify%E5%AE%9E%E7%8E%B0Ai-Workflow/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Workflow</category>
-      </categories>
-      <tags>
-        <tag>Workflow</tag>
-        <tag>Dify</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第二篇：使用 LangGraph 构建一个Ai Workflow</title>
-    <url>/2026/03/26/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E4%BD%BF%E7%94%A8LangGraph%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AAAi-Workflow/</url>
+    <url>/2026/03/26/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E4%BD%BF%E7%94%A8LangGraph%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AAAi-Workflow/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2240,8 +457,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第二十一篇：工作流实战：舆情分析助手——LLM节点</title>
-    <url>/2026/04/14/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-LLM%E8%8A%82%E7%82%B9/</url>
+    <title>第六篇：基于Dify实现Ai Workflow</title>
+    <url>/2026/03/30/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E5%9F%BA%E4%BA%8EDify%E5%AE%9E%E7%8E%B0Ai-Workflow/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2256,14 +473,34 @@
         <category>Workflow</category>
       </categories>
       <tags>
-        <tag>实战</tag>
         <tag>Workflow</tag>
-        <tag>舆情分析</tag>
+        <tag>Dify</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇：初识Ai Workflow</title>
+    <url>/2026/03/25/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E5%88%9D%E8%AF%86Ai-Workflow/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>大模型</tag>
+        <tag>Workflow</tag>
       </tags>
   </entry>
   <entry>
     <title>第二十篇：工作流实战：舆情分析助手——微博内容提取</title>
-    <url>/2026/04/13/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-%E5%BE%AE%E5%8D%9A%E5%86%85%E5%AE%B9%E6%8F%90%E5%8F%96/</url>
+    <url>/2026/04/13/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-%E5%BE%AE%E5%8D%9A%E5%86%85%E5%AE%B9%E6%8F%90%E5%8F%96/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2285,7 +522,72 @@
   </entry>
   <entry>
     <title>第二十二篇：工作流实战：舆情分析助手——数据保存</title>
-    <url>/2026/04/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-%E6%95%B0%E6%8D%AE%E4%BF%9D%E5%AD%98/</url>
+    <url>/2026/04/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-%E6%95%B0%E6%8D%AE%E4%BF%9D%E5%AD%98/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>Workflow</tag>
+        <tag>舆情分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十一篇：工作流实战：舆情分析助手——LLM节点</title>
+    <url>/2026/04/14/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-LLM%E8%8A%82%E7%82%B9/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>Workflow</tag>
+        <tag>舆情分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第五篇：工作流平台（Dify为例）中的常用组件</title>
+    <url>/2026/03/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%B9%B3%E5%8F%B0%E4%B8%AD%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>Workflow</tag>
+        <tag>Dify</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十八篇：工作流实战：舆情分析助手——爬虫工具</title>
+    <url>/2026/04/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-%E7%88%AC%E8%99%AB%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2307,29 +609,7 @@
   </entry>
   <entry>
     <title>第十七篇：工作流实战：舆情分析助手——整体流程</title>
-    <url>/2026/04/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
-</blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
-]]></content>
-      <categories>
-        <category>大模型学习</category>
-        <category>Workflow</category>
-      </categories>
-      <tags>
-        <tag>实战</tag>
-        <tag>Workflow</tag>
-        <tag>舆情分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第十八篇：工作流实战：舆情分析助手——爬虫工具</title>
-    <url>/2026/04/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-%E7%88%AC%E8%99%AB%E5%B7%A5%E5%85%B7/</url>
+    <url>/2026/04/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2351,7 +631,7 @@
   </entry>
   <entry>
     <title>第四篇：本地部署Dify做工作流搭建</title>
-    <url>/2026/03/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Dify%E5%81%9A%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%90%AD%E5%BB%BA/</url>
+    <url>/2026/03/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Dify%E5%81%9A%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2371,8 +651,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第五篇：工作流平台（Dify为例）中的常用组件</title>
-    <url>/2026/03/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%B9%B3%E5%8F%B0%E4%B8%AD%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6/</url>
+    <title>第二篇：上下文太长会带来什么问题?</title>
+    <url>/2026/04/21/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AD%E3%80%81%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%A4%AA%E9%95%BF%E4%BC%9A%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2384,16 +664,15 @@
 ]]></content>
       <categories>
         <category>大模型学习</category>
-        <category>Workflow</category>
+        <category>上下文工程</category>
       </categories>
       <tags>
-        <tag>Workflow</tag>
-        <tag>Dify</tag>
+        <tag>上下文工程</tag>
       </tags>
   </entry>
   <entry>
     <title>第十九篇：工作流实战：舆情分析助手——N8N配置</title>
-    <url>/2026/04/12/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-N8N%E9%85%8D%E7%BD%AE/</url>
+    <url>/2026/04/12/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%94%E3%80%81Workflow/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AE%9E%E6%88%98-%E8%88%86%E6%83%85%E5%88%86%E6%9E%90%E5%8A%A9%E6%89%8B-N8N%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2415,8 +694,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第二篇：上下文太长会带来什么问题?</title>
-    <url>/2026/04/21/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%A4%AA%E9%95%BF%E4%BC%9A%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98/</url>
+    <title>第三篇：什么是上下文工程?</title>
+    <url>/2026/04/22/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AD%E3%80%81%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2435,8 +714,29 @@
       </tags>
   </entry>
   <entry>
+    <title>第五篇：什么是Harness Engineer?</title>
+    <url>/2026/04/24/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AD%E3%80%81%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E4%BB%80%E4%B9%88%E6%98%AFHarness-Engineer/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>上下文工程</category>
+      </categories>
+      <tags>
+        <tag>上下文工程</tag>
+        <tag>Harness</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一篇：什么是Context，和Memory、Prompt、Token</title>
-    <url>/2026/04/20/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E4%BB%80%E4%B9%88%E6%98%AFContext%E5%92%8CMemory-Prompt-Token/</url>
+    <url>/2026/04/20/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AD%E3%80%81%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E4%BB%80%E4%B9%88%E6%98%AFContext%E5%92%8CMemory-Prompt-Token/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2458,8 +758,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第五篇：什么是Harness Engineer?</title>
-    <url>/2026/04/24/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E4%BB%80%E4%B9%88%E6%98%AFHarness-Engineer/</url>
+    <title>第十六篇：MCP与其他协议的区别</title>
+    <url>/2026/01/25/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/MCP%E4%B8%8E%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2471,16 +771,16 @@
 ]]></content>
       <categories>
         <category>大模型学习</category>
-        <category>上下文工程</category>
+        <category>MCP</category>
       </categories>
       <tags>
-        <tag>上下文工程</tag>
-        <tag>Harness</tag>
+        <tag>MCP</tag>
+        <tag>协议</tag>
       </tags>
   </entry>
   <entry>
-    <title>第三篇：什么是上下文工程?</title>
-    <url>/2026/04/22/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/</url>
+    <title>第十三篇：MCP 调试工具</title>
+    <url>/2026/01/22/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/MCP%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2492,15 +792,37 @@
 ]]></content>
       <categories>
         <category>大模型学习</category>
-        <category>上下文工程</category>
+        <category>MCP</category>
       </categories>
       <tags>
-        <tag>上下文工程</tag>
+        <tag>MCP</tag>
+        <tag>调试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十一篇：MCP 如何实现认证鉴权</title>
+    <url>/2026/01/20/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/MCP%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E9%89%B4%E6%9D%83/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>认证鉴权</tag>
       </tags>
   </entry>
   <entry>
     <title>第四篇：实战：Manus的上下文工程实践</title>
-    <url>/2026/04/23/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E5%AE%9E%E6%88%98-Manus%E7%9A%84%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</url>
+    <url>/2026/04/23/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AD%E3%80%81%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/%E5%AE%9E%E6%88%98-Manus%E7%9A%84%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>本文是「大模型学习」系列文章之一，持续更新中。</p>
 </blockquote>
@@ -2518,6 +840,1684 @@
         <tag>实战</tag>
         <tag>上下文工程</tag>
         <tag>Manus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇：什么是MCP?</title>
+    <url>/2026/01/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E4%BB%80%E4%B9%88%E6%98%AFMCP/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>大模型</tag>
+        <tag>MCP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第八篇：Spring AI MCP 调用实现原理</title>
+    <url>/2026/01/17/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/Spring-AI-MCP%E8%B0%83%E7%94%A8%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>MCP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十五篇：如何实现 MCP 工具过滤</title>
+    <url>/2026/01/24/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0MCP%E5%B7%A5%E5%85%B7%E8%BF%87%E6%BB%A4/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>工具过滤</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第九篇：SSE MCP Server如何实现重连?</title>
+    <url>/2026/01/18/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/SSE-MCP-Server%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%87%8D%E8%BF%9E/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>SSE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十四篇：如何跳过 MCP 的模型总结</title>
+    <url>/2026/01/23/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87MCP%E7%9A%84%E6%A8%A1%E5%9E%8B%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十篇：将 MCP 改造为 HTTPS</title>
+    <url>/2026/01/19/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E5%B0%86MCP%E6%94%B9%E9%80%A0%E4%B8%BAHTTPS/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>HTTPS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第六篇：实战：使用Spring AI开发MCP Server</title>
+    <url>/2026/01/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E5%AE%9E%E6%88%98-%E4%BD%BF%E7%94%A8Spring-AI%E5%BC%80%E5%8F%91MCP-Server/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>实战</tag>
+        <tag>MCP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第七篇：实战：使用Spring AI开发MCP Client</title>
+    <url>/2026/01/16/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E5%AE%9E%E6%88%98-%E4%BD%BF%E7%94%A8Spring-AI%E5%BC%80%E5%8F%91MCP-Client/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>实战</tag>
+        <tag>MCP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第四篇：深入理解MCP技术原理（下）</title>
+    <url>/2026/01/13/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E4%B8%8B/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>技术原理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：深入理解MCP技术原理（上）</title>
+    <url>/2026/01/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E4%B8%8A/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>技术原理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十二篇：神奇的 context-path</title>
+    <url>/2026/01/21/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E7%A5%9E%E5%A5%87%E7%9A%84context-path/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>context-path</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三篇：深入理解MCP技术原理（中）</title>
+    <url>/2026/01/12/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E4%B8%AD/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>技术原理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十六篇：LangChain4J中的Modular RAG支持</title>
+    <url>/2026/02/26/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/LangChain4J%E4%B8%AD%E7%9A%84Modular-RAG%E6%94%AF%E6%8C%81/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>LangChain4J</tag>
+        <tag>Modular RAG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十八篇：RAG优化技术：查询路由</title>
+    <url>/2026/02/18/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E6%9F%A5%E8%AF%A2%E8%B7%AF%E7%94%B1/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十四篇：RAG优化技术：Graph RAG</title>
+    <url>/2026/02/24/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-Graph-RAG/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>Graph RAG</tag>
+        <tag>优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十九篇：RAG优化技术：查询构造</title>
+    <url>/2026/02/19/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E6%9F%A5%E8%AF%A2%E6%9E%84%E9%80%A0/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十六篇：RAG优化技术：元数据过滤</title>
+    <url>/2026/02/16/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E5%85%83%E6%95%B0%E6%8D%AE%E8%BF%87%E6%BB%A4/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十一篇：RAG优化技术：HyDE</title>
+    <url>/2026/02/21/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-HyDE/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>优化</tag>
+        <tag>HyDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十三篇：RAG优化技术：重排序</title>
+    <url>/2026/02/23/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E9%87%8D%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>优化</tag>
+        <tag>重排序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十七篇：RAG优化技术：问题改写</title>
+    <url>/2026/02/17/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E9%97%AE%E9%A2%98%E6%94%B9%E5%86%99/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第五篇：RAG的范式演进</title>
+    <url>/2026/02/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E7%9A%84%E8%8C%83%E5%BC%8F%E6%BC%94%E8%BF%9B/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十二篇：RAG优化技术：混合检索</title>
+    <url>/2026/02/22/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E6%B7%B7%E5%90%88%E6%A3%80%E7%B4%A2/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>优化</tag>
+        <tag>混合检索</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十四篇：Spring AI 和 LangChain4J中文档处理功能</title>
+    <url>/2026/02/14/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/Spring-AI%E5%92%8CLangChain4J%E4%B8%AD%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>RAG</tag>
+        <tag>LangChain4J</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十篇：RAG优化技术：问题澄清</title>
+    <url>/2026/02/20/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/RAG%E4%BC%98%E5%8C%96%E6%8A%80%E6%9C%AF-%E9%97%AE%E9%A2%98%E6%BE%84%E6%B8%85/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十五篇：Spring AI中的Modular RAG支持</title>
+    <url>/2026/02/25/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/Spring-AI%E4%B8%AD%E7%9A%84Modular-RAG%E6%94%AF%E6%8C%81/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>RAG</tag>
+        <tag>Modular RAG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十八篇：Spring AI 和 LangChain4J的模块化RAG功能</title>
+    <url>/2026/02/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/Spring-AI%E5%92%8CLangChain4J%E7%9A%84%E6%A8%A1%E5%9D%97%E5%8C%96RAG%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>RAG</tag>
+        <tag>LangChain4J</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第九篇：什么是父子分片?</title>
+    <url>/2026/02/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E4%BB%80%E4%B9%88%E6%98%AF%E7%88%B6%E5%AD%90%E5%88%86%E7%89%87/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>父子分片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第五篇：如何接入MCP Server?</title>
+    <url>/2026/01/14/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E3%80%81MCP/%E5%A6%82%E4%BD%95%E6%8E%A5%E5%85%A5MCP-Server/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>MCP</category>
+      </categories>
+      <tags>
+        <tag>MCP</tag>
+        <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十七篇：基于LangChain4J实现简单的RAG检索</title>
+    <url>/2026/02/27/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E5%9F%BA%E4%BA%8ELangChain4J%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84RAG%E6%A3%80%E7%B4%A2/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>LangChain4J</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十九篇：多模态RAG</title>
+    <url>/2026/03/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E5%A4%9A%E6%A8%A1%E6%80%81RAG/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>多模态</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第四篇：使用 LlamaIndex 构建一个简单的RAG系统</title>
+    <url>/2026/02/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E4%BD%BF%E7%94%A8LlamaIndex%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84RAG%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>LlamaIndex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十篇：向量数据库如何选型?</title>
+    <url>/2026/02/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A6%82%E4%BD%95%E9%80%89%E5%9E%8B/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>向量数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十一篇：如何使用离线向量模型</title>
+    <url>/2026/02/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E7%A6%BB%E7%BA%BF%E5%90%91%E9%87%8F%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>向量模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第七篇：常见文档分片方式</title>
+    <url>/2026/02/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E5%B8%B8%E8%A7%81%E6%96%87%E6%A1%A3%E5%88%86%E7%89%87%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>文档分片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇：什么是RAG?</title>
+    <url>/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E4%BB%80%E4%B9%88%E6%98%AFRAG/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>大模型</tag>
+        <tag>RAG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第八篇：文档分片的代码实现</title>
+    <url>/2026/02/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E6%96%87%E6%A1%A3%E5%88%86%E7%89%87%E7%9A%84%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>文档分片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第六篇：文档预处理</title>
+    <url>/2026/02/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E6%96%87%E6%A1%A3%E9%A2%84%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>文档预处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三十篇：实战：多模态RAG智能问答系统</title>
+    <url>/2026/03/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E5%AE%9E%E6%88%98-%E5%A4%9A%E6%A8%A1%E6%80%81RAG%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>RAG</tag>
+        <tag>多模态</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三篇：深入理解RAG技术原理——检索生成</title>
+    <url>/2026/02/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3RAG%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E6%A3%80%E7%B4%A2%E7%94%9F%E6%88%90/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>检索生成</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：深入理解RAG技术原理——索引构建</title>
+    <url>/2026/02/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3RAG%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86-%E7%B4%A2%E5%BC%95%E6%9E%84%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>索引构建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十五篇：检索增强生成</title>
+    <url>/2026/02/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十三篇：索引构建流程（ETL）总结与查缺补漏</title>
+    <url>/2026/02/13/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E7%B4%A2%E5%BC%95%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8BETL%E6%80%BB%E7%BB%93%E4%B8%8E%E6%9F%A5%E7%BC%BA%E8%A1%A5%E6%BC%8F/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>ETL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十二篇：相似度搜索的常见算法</title>
+    <url>/2026/02/12/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E4%B8%89%E3%80%81RAG/%E7%9B%B8%E4%BC%BC%E5%BA%A6%E6%90%9C%E7%B4%A2%E7%9A%84%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>RAG</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>相似度搜索</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第九篇：OpenCode（CC的开源版）中的Skills的实现</title>
+    <url>/2026/05/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/OpenCode%E4%B8%AD%E7%9A%84Skills%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Skills</tag>
+        <tag>OpenCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三篇：Claude Code中如何使用Skills</title>
+    <url>/2026/04/30/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/Claude-Code%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Skills/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Skills</tag>
+        <tag>Claude Code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十一篇：Claude Code中的Skills实现原理</title>
+    <url>/2026/05/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/Claude-Code%E4%B8%AD%E7%9A%84Skills%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Skills</tag>
+        <tag>Claude Code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十二篇：Agent Skills的安全问题</title>
+    <url>/2026/05/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/Agent-Skills%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Skills</tag>
+        <tag>安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十篇：Spring AI中Skill集成的实现原理</title>
+    <url>/2026/05/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/Spring-AI%E4%B8%ADSkill%E9%9B%86%E6%88%90%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十三篇：Hermes Agent的Skill自进化机制</title>
+    <url>/2026/05/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/Hermes-Agent%E7%9A%84Skill%E8%87%AA%E8%BF%9B%E5%8C%96%E6%9C%BA%E5%88%B6/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Skills</tag>
+        <tag>Hermes Agent</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：Skill的渐进式披露</title>
+    <url>/2026/04/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/Skill%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%8A%AB%E9%9C%B2/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第六篇：一些好用的Skills推荐</title>
+    <url>/2026/05/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84Skills%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第七篇：SpringAI中如何使用Skill?（Agent）</title>
+    <url>/2026/05/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/SpringAI%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Skill-Agent/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>Agent</tag>
+        <tag>Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第四篇：实战：开发一个简历评估的Skill</title>
+    <url>/2026/05/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/%E5%AE%9E%E6%88%98-%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8E%86%E8%AF%84%E4%BC%B0%E7%9A%84Skill/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第五篇：简历评估Skills讲解</title>
+    <url>/2026/05/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/%E7%AE%80%E5%8E%86%E8%AF%84%E4%BC%B0Skills%E8%AE%B2%E8%A7%A3/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十二篇：Agent常用架构：Human in the Loop</title>
+    <url>/2026/03/12/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-Human-in-the-Loop/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>Human in the Loop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇：什么是Agent Skills，为什么需要他?</title>
+    <url>/2026/04/28/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/%E4%BB%80%E4%B9%88%E6%98%AFAgent-Skills%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E4%BB%96/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第九篇：Agent常用架构：Plan and Execute Agent</title>
+    <url>/2026/03/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-Plan-and-Execute-Agent/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>Plan and Execute</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第三篇：Agent常用架构：ReAct Agent</title>
+    <url>/2026/03/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-ReAct-Agent/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>ReAct</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第八篇：SpringAI中如何使用Skill?（ChatClient）</title>
+    <url>/2026/05/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%85%AB%E3%80%81Skills/SpringAI%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Skill-ChatClient/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Skills</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>Skills</tag>
+        <tag>ChatClient</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十篇：Agent常用架构：ReWOO&amp;LLMCompiler</title>
+    <url>/2026/03/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-ReWOO-LLMCompiler/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>ReWOO</tag>
+        <tag>LLMCompiler</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十一篇：Agent常用架构：Reflection Agent</title>
+    <url>/2026/03/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-Reflection-Agent/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>Reflection</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第六篇：Alibaba-React Agent 核心组件</title>
+    <url>/2026/03/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/Alibaba-React-Agent%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>Alibaba</tag>
+        <tag>ReAct</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十三篇：Agent常用架构：Multi Agent</title>
+    <url>/2026/03/13/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/Agent%E5%B8%B8%E7%94%A8%E6%9E%B6%E6%9E%84-Multi-Agent/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>Multi Agent</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第五篇：Alibaba-React Agent 初探</title>
+    <url>/2026/03/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/Alibaba-React-Agent%E5%88%9D%E6%8E%A2/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>Alibaba</tag>
+        <tag>ReAct</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十九篇：ReAct Agent 流式输出后续问题</title>
+    <url>/2026/03/19/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/ReAct-Agent%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA%E5%90%8E%E7%BB%AD%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>ReAct</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十五篇：Spring AI Alibaba中的多智能体支持</title>
+    <url>/2026/03/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/Spring-AI-Alibaba%E4%B8%AD%E7%9A%84%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E6%94%AF%E6%8C%81/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Spring AI</tag>
+        <tag>Agent</tag>
+        <tag>Alibaba</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇：什么是AI Agent?</title>
+    <url>/2026/03/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E4%BB%80%E4%B9%88%E6%98%AFAI-Agent/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>大模型</tag>
+        <tag>Agent</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第四篇：React Agent的实现方式?</title>
+    <url>/2026/03/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/React-Agent%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>ReAct</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十四篇：使用AutoGen 构建一代代码生成器</title>
+    <url>/2026/03/14/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E4%BD%BF%E7%94%A8AutoGen%E6%9E%84%E5%BB%BA%E4%B8%80%E4%BB%A3%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>AutoGen</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第七篇：如何给Agent增加持久化记忆</title>
+    <url>/2026/03/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E5%A6%82%E4%BD%95%E7%BB%99Agent%E5%A2%9E%E5%8A%A0%E6%8C%81%E4%B9%85%E5%8C%96%E8%AE%B0%E5%BF%86/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>记忆</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十六篇：多智能体协议——A2A</title>
+    <url>/2026/03/16/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E5%8D%8F%E8%AE%AE-A2A/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>A2A</tag>
+        <tag>多智能体</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十八篇：实战一：手搓 ReactAgent（流式）</title>
+    <url>/2026/03/18/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E5%AE%9E%E6%88%98%E4%B8%80-%E6%89%8B%E6%90%93ReactAgent-%E6%B5%81%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>Agent</tag>
+        <tag>ReAct</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第十七篇：实战一：手搓 ReactAgent（非流式）</title>
+    <url>/2026/03/17/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E5%AE%9E%E6%88%98%E4%B8%80-%E6%89%8B%E6%90%93ReactAgent-%E9%9D%9E%E6%B5%81%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>Agent</tag>
+        <tag>ReAct</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十二篇：实战三：手搓 PlanExecuteAgent（下）</title>
+    <url>/2026/03/22/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E5%AE%9E%E6%88%98%E4%B8%89-%E6%89%8B%E6%90%93PlanExecuteAgent-%E4%B8%8B/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>Agent</tag>
+        <tag>Plan and Execute</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十一篇：实战三：手搓 PlanExecuteAgent（上）</title>
+    <url>/2026/03/21/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E5%AE%9E%E6%88%98%E4%B8%89-%E6%89%8B%E6%90%93PlanExecuteAgent-%E4%B8%8A/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>Agent</tag>
+        <tag>Plan and Execute</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十篇：实战二：手搓 ReflectionAgent</title>
+    <url>/2026/03/20/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E5%AE%9E%E6%88%98%E4%BA%8C-%E6%89%8B%E6%90%93ReflectionAgent/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>Agent</tag>
+        <tag>Reflection</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：常用的Agent开发框架</title>
+    <url>/2026/03/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E5%B8%B8%E7%94%A8%E7%9A%84Agent%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>开发框架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二十三篇：实战四：手搓 Human in the Loop</title>
+    <url>/2026/03/23/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E5%AE%9E%E6%88%98%E5%9B%9B-%E6%89%8B%E6%90%93Human-in-the-Loop/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>实战</tag>
+        <tag>Agent</tag>
+        <tag>Human in the Loop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第八篇：深入理解 Alibaba-React Agent 原理</title>
+    <url>/2026/03/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/%E5%9B%9B%E3%80%81Agent/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Alibaba-React-Agent%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><!-- 在此开始写作 -->
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><!-- 总结本文核心要点 -->
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><!-- 列出参考链接 -->
+]]></content>
+      <categories>
+        <category>大模型学习</category>
+        <category>Agent</category>
+      </categories>
+      <tags>
+        <tag>Agent</tag>
+        <tag>Alibaba</tag>
+        <tag>ReAct</tag>
       </tags>
   </entry>
 </search>
