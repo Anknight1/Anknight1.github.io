@@ -1,0 +1,431 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>第一篇：MCP技术原理深度解析 | Anknight1's Blog</title><meta name="author" content="Anknight1"><meta name="copyright" content="Anknight1"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="MCP技术原理深度解析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一篇：MCP技术原理深度解析">
+<meta property="og:url" content="https://anknight1.github.io/2026/01/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/index.html">
+<meta property="og:site_name" content="Anknight1&#39;s Blog">
+<meta property="og:description" content="MCP技术原理深度解析">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://anknight1.github.io/img/avatar.png">
+<meta property="article:published_time" content="2026-01-10T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-04-29T04:27:15.389Z">
+<meta property="article:author" content="Anknight1">
+<meta property="article:tag" content="2-MCP（模型上下文协议）">
+<meta property="article:tag" content="JSON-RPC">
+<meta property="article:tag" content="SSE">
+<meta property="article:tag" content="stdio">
+<meta property="article:tag" content="技术原理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://anknight1.github.io/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "第一篇：MCP技术原理深度解析",
+  "url": "https://anknight1.github.io/2026/01/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/",
+  "image": "https://anknight1.github.io/img/avatar.png",
+  "datePublished": "2026-01-10T16:00:00.000Z",
+  "dateModified": "2026-04-29T04:27:15.389Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Anknight1",
+      "url": "https://github.com/Anknight1"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://anknight1.github.io/2026/01/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '第一篇：MCP技术原理深度解析',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">99</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">119</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"><i class="fa-fw fas fa-brain"></i><span> 大模型学习</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Anknight1's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">第一篇：MCP技术原理深度解析</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"><i class="fa-fw fas fa-brain"></i><span> 大模型学习</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">第一篇：MCP技术原理深度解析</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-10T16:00:00.000Z" title="发表于 2026-01-11 00:00:00">2026-01-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-04-29T04:27:15.389Z" title="更新于 2026-04-29 12:27:15">2026-04-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">大模型学习</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/">2-MCP（模型上下文协议）</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<p>了解 MCP 的使用方式之后，本篇从技术原理层面深入剖析 MCP 的底层机制，帮助你真正理解 MCP 是如何工作的。内容分为三部分：消息协议层（JSON-RPC 2.0）、传输层（三种传输方式）、高级特性（Resources &#x2F; Prompts &#x2F; Sampling）。</p>
+<h2 id="一、MCP-的协议分层"><a href="#一、MCP-的协议分层" class="headerlink" title="一、MCP 的协议分层"></a>一、MCP 的协议分层</h2><p>MCP 协议由两层组成：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────────────────┐</span><br><span class="line">│         消息协议层                    │</span><br><span class="line">│    JSON-RPC 2.0（定义消息格式）        │</span><br><span class="line">├─────────────────────────────────────┤</span><br><span class="line">│         传输协议层                    │</span><br><span class="line">│  stdio / SSE / Streamable HTTP      │</span><br><span class="line">└─────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>消息协议层定义消息的格式和语义（请求、响应、通知），传输协议层定义消息如何在网络或进程间传输。这种分层设计使得 MCP 可以在不同的传输方式上运行，而不需要改变上层的消息格式。</p>
+<h2 id="二、JSON-RPC-2-0-消息格式"><a href="#二、JSON-RPC-2-0-消息格式" class="headerlink" title="二、JSON-RPC 2.0 消息格式"></a>二、JSON-RPC 2.0 消息格式</h2><p>MCP 使用 JSON-RPC 2.0 作为消息协议，有三种消息类型：</p>
+<h3 id="1-请求（Request）"><a href="#1-请求（Request）" class="headerlink" title="1. 请求（Request）"></a>1. 请求（Request）</h3><p>客户端发给服务端，期望得到响应：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;method&quot;</span><span class="punctuation">:</span> <span class="string">&quot;tools/call&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;params&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;getWeather&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;arguments&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;city&quot;</span><span class="punctuation">:</span> <span class="string">&quot;北京&quot;</span><span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>关键字段：<code>jsonrpc</code> 固定为 <code>&quot;2.0&quot;</code>，<code>method</code> 是调用的方法名，<code>params</code> 是方法参数（可选），<code>id</code> 是请求 ID，用于匹配响应（必须唯一）。</p>
+<h3 id="2-响应（Response）"><a href="#2-响应（Response）" class="headerlink" title="2. 响应（Response）"></a>2. 响应（Response）</h3><p>服务端对请求的回复，<code>result</code> 和 <code>error</code> 互斥：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 成功响应</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;result&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;content&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="punctuation">&#123;</span><span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;text&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;北京：晴，22°C&quot;</span><span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 错误响应</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;error&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="number">-32602</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Invalid params&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;data&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;detail&quot;</span><span class="punctuation">:</span> <span class="string">&quot;city is required&quot;</span><span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-通知（Notification）"><a href="#3-通知（Notification）" class="headerlink" title="3. 通知（Notification）"></a>3. 通知（Notification）</h3><p>单向消息，不需要响应（没有 <code>id</code> 字段）：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;method&quot;</span><span class="punctuation">:</span> <span class="string">&quot;notifications/tools/list_changed&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>通知用于服务端主动推送事件，比如工具列表发生变化。</p>
+<h3 id="MCP-标准方法列表"><a href="#MCP-标准方法列表" class="headerlink" title="MCP 标准方法列表"></a>MCP 标准方法列表</h3><p>MCP 协议定义了一组标准方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>方向</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>initialize</code></td>
+<td>Client → Server</td>
+<td>初始化连接，协商能力</td>
+</tr>
+<tr>
+<td><code>initialized</code></td>
+<td>Client → Server</td>
+<td>通知初始化完成（通知类型）</td>
+</tr>
+<tr>
+<td><code>tools/list</code></td>
+<td>Client → Server</td>
+<td>获取工具列表</td>
+</tr>
+<tr>
+<td><code>tools/call</code></td>
+<td>Client → Server</td>
+<td>调用工具</td>
+</tr>
+<tr>
+<td><code>resources/list</code></td>
+<td>Client → Server</td>
+<td>获取资源列表</td>
+</tr>
+<tr>
+<td><code>resources/read</code></td>
+<td>Client → Server</td>
+<td>读取资源内容</td>
+</tr>
+<tr>
+<td><code>prompts/list</code></td>
+<td>Client → Server</td>
+<td>获取提示模板列表</td>
+</tr>
+<tr>
+<td><code>prompts/get</code></td>
+<td>Client → Server</td>
+<td>获取特定提示模板</td>
+</tr>
+<tr>
+<td><code>notifications/tools/list_changed</code></td>
+<td>Server → Client</td>
+<td>工具列表变更通知</td>
+</tr>
+<tr>
+<td><code>ping</code></td>
+<td>双向</td>
+<td>心跳检测</td>
+</tr>
+</tbody></table>
+<h3 id="错误码规范"><a href="#错误码规范" class="headerlink" title="错误码规范"></a>错误码规范</h3><table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-32700</td>
+<td>Parse error（JSON 解析失败）</td>
+</tr>
+<tr>
+<td>-32600</td>
+<td>Invalid Request（请求格式错误）</td>
+</tr>
+<tr>
+<td>-32601</td>
+<td>Method not found（方法不存在）</td>
+</tr>
+<tr>
+<td>-32602</td>
+<td>Invalid params（参数错误）</td>
+</tr>
+<tr>
+<td>-32603</td>
+<td>Internal error（服务器内部错误）</td>
+</tr>
+<tr>
+<td>-32001</td>
+<td>Request timeout（请求超时）</td>
+</tr>
+<tr>
+<td>-32002</td>
+<td>Resource not found（资源不存在）</td>
+</tr>
+</tbody></table>
+<h2 id="三、连接建立（三步握手）"><a href="#三、连接建立（三步握手）" class="headerlink" title="三、连接建立（三步握手）"></a>三、连接建立（三步握手）</h2><p>MCP 连接建立分为三步：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Client                          Server</span><br><span class="line">  │                               │</span><br><span class="line">  │──── initialize request ──────►│</span><br><span class="line">  │     &#123;protocolVersion,          │</span><br><span class="line">  │      capabilities,             │</span><br><span class="line">  │      clientInfo&#125;               │</span><br><span class="line">  │                               │</span><br><span class="line">  │◄─── initialize response ──────│</span><br><span class="line">  │     &#123;protocolVersion,          │</span><br><span class="line">  │      capabilities,             │</span><br><span class="line">  │      serverInfo&#125;               │</span><br><span class="line">  │                               │</span><br><span class="line">  │──── initialized notification ►│</span><br><span class="line">  │     (无 id，单向通知)            │</span><br><span class="line">  │                               │</span><br><span class="line">  │    ✅ 连接建立完成，可以正常通信   │</span><br></pre></td></tr></table></figure>
+
+<p><strong>第一步：Client 发送 initialize 请求</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;method&quot;</span><span class="punctuation">:</span> <span class="string">&quot;initialize&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;params&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;protocolVersion&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2024-11-05&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;capabilities&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;roots&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;listChanged&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;sampling&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;clientInfo&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;spring-ai-mcp-client&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1.0.0&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">1</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>第二步：Server 返回 initialize 响应</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;result&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;protocolVersion&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2024-11-05&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;capabilities&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;listChanged&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;resources&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;subscribe&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span> <span class="attr">&quot;listChanged&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;prompts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;listChanged&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;logging&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;serverInfo&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;my-mcp-server&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1.0.0&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>第三步：Client 发送 initialized 通知</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;method&quot;</span><span class="punctuation">:</span> <span class="string">&quot;notifications/initialized&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>这是一个通知（没有 <code>id</code>），告诉 Server 客户端已准备好，可以开始正常通信。</p>
+<h3 id="能力协商（Capabilities）"><a href="#能力协商（Capabilities）" class="headerlink" title="能力协商（Capabilities）"></a>能力协商（Capabilities）</h3><p>握手过程中，Client 和 Server 互相声明自己支持的能力，这叫<strong>能力协商</strong>。双方只使用对方声明支持的能力，避免调用不支持的功能导致错误。</p>
+<p>Server 可以声明的能力包括：<code>tools.listChanged</code>（工具列表变更通知）、<code>resources.subscribe</code>（资源订阅）、<code>prompts.listChanged</code>（提示模板变更通知）、<code>logging</code>（日志功能）、<code>sampling</code>（反向调用 LLM）。</p>
+<p>Client 可以声明的能力包括：<code>roots.listChanged</code>（根目录列表变更通知）、<code>sampling</code>（支持被 Server 请求采样）。</p>
+<h2 id="四、完整工具调用流程"><a href="#四、完整工具调用流程" class="headerlink" title="四、完整工具调用流程"></a>四、完整工具调用流程</h2><p>连接建立后，一次完整的工具调用流程：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Client                          Server</span><br><span class="line">  │                               │</span><br><span class="line">  │──── tools/list ──────────────►│</span><br><span class="line">  │◄─── tools list response ──────│</span><br><span class="line">  │     [&#123;name, description,       │</span><br><span class="line">  │       inputSchema&#125;]            │</span><br><span class="line">  │                               │</span><br><span class="line">  │  [LLM 决定调用 getWeather]      │</span><br><span class="line">  │                               │</span><br><span class="line">  │──── tools/call ──────────────►│</span><br><span class="line">  │     &#123;name: &quot;getWeather&quot;,       │</span><br><span class="line">  │      arguments: &#123;city: &quot;北京&quot;&#125;&#125;│</span><br><span class="line">  │                               │</span><br><span class="line">  │◄─── tools/call response ──────│</span><br><span class="line">  │     &#123;content: [&#123;type: &quot;text&quot;,  │</span><br><span class="line">  │       text: &quot;北京：晴，22°C&quot;&#125;]&#125; │</span><br><span class="line">  │                               │</span><br><span class="line">  │  [LLM 整合结果，生成最终回答]    │</span><br></pre></td></tr></table></figure>
+
+<h2 id="五、三种传输方式"><a href="#五、三种传输方式" class="headerlink" title="五、三种传输方式"></a>五、三种传输方式</h2><p>MCP 支持三种传输方式，适应不同的部署场景：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">┌──────────────────────────────────────────────────────┐</span><br><span class="line">│                   MCP 传输层                           │</span><br><span class="line">├──────────────┬──────────────┬────────────────────────┤</span><br><span class="line">│    stdio     │     SSE      │   Streamable HTTP       │</span><br><span class="line">│  (标准输入输出)│(服务器推送事件)│  (流式 HTTP，最新规范)  │</span><br><span class="line">├──────────────┼──────────────┼────────────────────────┤</span><br><span class="line">│ 本地进程通信  │ 远程网络通信  │  远程网络通信（推荐）     │</span><br><span class="line">│ 无需网络     │ 需要 HTTP    │  需要 HTTP              │</span><br><span class="line">│ 最简单       │ 较复杂       │  最灵活                  │</span><br><span class="line">└──────────────┴──────────────┴────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<h3 id="stdio-传输"><a href="#stdio-传输" class="headerlink" title="stdio 传输"></a>stdio 传输</h3><p>stdio（标准输入&#x2F;输出）是最简单的传输方式，适用于本地进程通信：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────┐                ┌─────────────────┐</span><br><span class="line">│   MCP Client    │                │   MCP Server    │</span><br><span class="line">│                 │   stdin (写入) │                 │</span><br><span class="line">│                 │───────────────►│                 │</span><br><span class="line">│                 │  stdout (读取) │                 │</span><br><span class="line">│                 │◄───────────────│                 │</span><br><span class="line">└─────────────────┘                └─────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>Client 通过 stdin 向 Server 发送 JSON-RPC 消息，Server 通过 stdout 向 Client 返回响应，每条消息以换行符 <code>\n</code> 分隔，Server 的 stderr 用于输出日志（不参与协议通信）。</p>
+<p>适用场景：Claude Desktop、Cursor 等本地 AI 工具集成，以及开发调试阶段。</p>
+<p>Spring AI 中的 stdio 配置：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">StdioServerParameters</span> <span class="variable">params</span> <span class="operator">=</span> StdioServerParameters.builder()</span><br><span class="line">    .command(<span class="string">&quot;java&quot;</span>)</span><br><span class="line">    .args(<span class="string">&quot;-jar&quot;</span>, <span class="string">&quot;/path/to/mcp-server.jar&quot;</span>)</span><br><span class="line">    .build();</span><br><span class="line"></span><br><span class="line"><span class="type">McpClient</span> <span class="variable">client</span> <span class="operator">=</span> McpClient.sync(</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">StdioClientTransport</span>(params)</span><br><span class="line">).build();</span><br></pre></td></tr></table></figure>
+
+<h3 id="SSE-传输（旧规范）"><a href="#SSE-传输（旧规范）" class="headerlink" title="SSE 传输（旧规范）"></a>SSE 传输（旧规范）</h3><p>SSE（Server-Sent Events）是 MCP 早期版本（2024-11-05）使用的远程传输方式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────┐                ┌─────────────────┐</span><br><span class="line">│   MCP Client    │                │   MCP Server    │</span><br><span class="line">│                 │  GET /sse      │                 │</span><br><span class="line">│                 │───────────────►│  建立 SSE 长连接  │</span><br><span class="line">│                 │◄───────────────│                 │</span><br><span class="line">│                 │  event: endpoint│                │</span><br><span class="line">│                 │  data: /message │                │</span><br><span class="line">│                 │                │                 │</span><br><span class="line">│                 │  POST /message │                 │</span><br><span class="line">│                 │───────────────►│  发送请求        │</span><br><span class="line">│                 │◄───────────────│  SSE 推送响应    │</span><br><span class="line">└─────────────────┘                └─────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>Client 先通过 <code>GET /sse</code> 建立 SSE 长连接，Server 推送 <code>endpoint</code> 事件告知消息 URL，Client 通过 <code>POST /message</code> 发送请求，Server 通过 SSE 连接推送响应。</p>
+<p>SSE 传输存在一些固有缺陷：需要两个连接（SSE 长连接 + POST 请求）、负载均衡困难（SSE 长连接有状态）、部分网络环境不支持 SSE 长连接、断线重连需要额外处理。</p>
+<h3 id="Streamable-HTTP-传输（新规范，推荐）"><a href="#Streamable-HTTP-传输（新规范，推荐）" class="headerlink" title="Streamable HTTP 传输（新规范，推荐）"></a>Streamable HTTP 传输（新规范，推荐）</h3><p>Streamable HTTP 是 MCP 2025-03-26 规范引入的新传输方式，解决了 SSE 的问题：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────┐                ┌─────────────────┐</span><br><span class="line">│   MCP Client    │                │   MCP Server    │</span><br><span class="line">│                 │  POST /mcp     │                 │</span><br><span class="line">│                 │  (JSON-RPC 请求)│                │</span><br><span class="line">│                 │───────────────►│                 │</span><br><span class="line">│                 │◄───────────────│                 │</span><br><span class="line">│                 │  200 OK        │                 │</span><br><span class="line">│                 │  Content-Type: │                 │</span><br><span class="line">│                 │  text/event-stream              │</span><br><span class="line">│                 │  (SSE 流式响应) │                 │</span><br><span class="line">└─────────────────┘                └─────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>所有通信都通过<strong>单一端点</strong> <code>POST /mcp</code> 完成，响应可以是普通 JSON（<code>application/json</code>）或 SSE 流式响应（<code>text/event-stream</code>），Server 根据需要动态选择。这种方式解决了 SSE 的负载均衡和防火墙问题，是目前推荐的远程传输方式。</p>
+<h3 id="三种传输方式对比"><a href="#三种传输方式对比" class="headerlink" title="三种传输方式对比"></a>三种传输方式对比</h3><table>
+<thead>
+<tr>
+<th>特性</th>
+<th>stdio</th>
+<th>SSE（旧）</th>
+<th>Streamable HTTP（新）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>适用场景</td>
+<td>本地进程</td>
+<td>远程服务</td>
+<td>远程服务（推荐）</td>
+</tr>
+<tr>
+<td>连接数</td>
+<td>1个进程</td>
+<td>2个（SSE+POST）</td>
+<td>1个端点</td>
+</tr>
+<tr>
+<td>负载均衡</td>
+<td>不适用</td>
+<td>困难</td>
+<td>容易</td>
+</tr>
+<tr>
+<td>防火墙友好</td>
+<td>不适用</td>
+<td>一般</td>
+<td>好</td>
+</tr>
+<tr>
+<td>规范版本</td>
+<td>所有版本</td>
+<td>2024-11-05</td>
+<td>2025-03-26+</td>
+</tr>
+</tbody></table>
+<p>选择建议：新项目优先使用 Streamable HTTP，需要兼容旧客户端使用 SSE，本地工具集成使用 stdio。</p>
+<h2 id="六、MCP-的四大能力"><a href="#六、MCP-的四大能力" class="headerlink" title="六、MCP 的四大能力"></a>六、MCP 的四大能力</h2><p>MCP Server 可以向 Client 暴露四种能力：Tools（工具）、Resources（资源）、Prompts（提示模板）、Sampling（采样）。</p>
+<h3 id="Resources（资源）"><a href="#Resources（资源）" class="headerlink" title="Resources（资源）"></a>Resources（资源）</h3><p>Resources 是 MCP Server 向 Client 暴露的<strong>数据内容</strong>，可以是文件、数据库记录、API 响应等。与 Tools 不同，Resources 是只读的数据，不执行操作。</p>
+<p>每个 Resource 都有一个唯一的 URI，格式类似文件路径或 URL：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">file:///home/user/documents/report.pdf</span><br><span class="line">database://mydb/users/123</span><br><span class="line">github://repos/owner/repo/README.md</span><br></pre></td></tr></table></figure>
+
+<p>Resources 相关方法：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 列出所有资源</span></span><br><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span><span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span><span class="attr">&quot;method&quot;</span><span class="punctuation">:</span><span class="string">&quot;resources/list&quot;</span><span class="punctuation">,</span><span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="number">1</span><span class="punctuation">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 读取资源内容</span></span><br><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span><span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span><span class="attr">&quot;method&quot;</span><span class="punctuation">:</span><span class="string">&quot;resources/read&quot;</span><span class="punctuation">,</span><span class="attr">&quot;params&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span><span class="attr">&quot;uri&quot;</span><span class="punctuation">:</span><span class="string">&quot;file:///data/report.pdf&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="number">2</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果 Server 声明了 <code>resources.subscribe</code> 能力，Client 还可以订阅资源变更，当资源内容发生变化时，Server 会主动推送 <code>notifications/resources/updated</code> 通知。</p>
+<p>Spring AI 中实现 Resources：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> McpServerFeatures.SyncResourceRegistration <span class="title function_">systemInfoResource</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">var</span> <span class="variable">resource</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">McpSchema</span>.Resource(</span><br><span class="line">        <span class="string">&quot;system://info&quot;</span>, <span class="string">&quot;系统信息&quot;</span>, <span class="string">&quot;获取当前系统的基本信息&quot;</span>, <span class="string">&quot;text/plain&quot;</span>, <span class="literal">null</span></span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">McpServerFeatures</span>.SyncResourceRegistration(resource, req -&gt; &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">info</span> <span class="operator">=</span> String.format(<span class="string">&quot;系统时间：%s\nJava版本：%s&quot;</span>,</span><br><span class="line">            java.time.LocalDateTime.now(), System.getProperty(<span class="string">&quot;java.version&quot;</span>));</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">McpSchema</span>.ReadResourceResult(</span><br><span class="line">            List.of(<span class="keyword">new</span> <span class="title class_">McpSchema</span>.TextResourceContents(<span class="string">&quot;system://info&quot;</span>, <span class="string">&quot;text/plain&quot;</span>, info))</span><br><span class="line">        );</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Prompts（提示模板）"><a href="#Prompts（提示模板）" class="headerlink" title="Prompts（提示模板）"></a>Prompts（提示模板）</h3><p>Prompts 是 MCP Server 提供的<strong>可复用提示模板</strong>，允许 Server 定义标准化的提示词，Client 可以获取并使用这些模板。典型用途包括代码审查模板、文档生成模板、数据分析模板等。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取特定提示模板（填入参数）</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;method&quot;</span><span class="punctuation">:</span> <span class="string">&quot;prompts/get&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;params&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;code-review&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;arguments&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Java&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="string">&quot;public void foo() &#123; ... &#125;&quot;</span><span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">2</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>Spring AI 中实现 Prompts：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> List&lt;McpServerFeatures.SyncPromptRegistration&gt; prompts() &#123;</span><br><span class="line">    <span class="keyword">return</span> List.of(</span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">McpServerFeatures</span>.SyncPromptRegistration(</span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">McpSchema</span>.Prompt(<span class="string">&quot;code-review&quot;</span>, <span class="string">&quot;代码审查提示模板&quot;</span>,</span><br><span class="line">                List.of(<span class="keyword">new</span> <span class="title class_">McpSchema</span>.PromptArgument(<span class="string">&quot;language&quot;</span>, <span class="string">&quot;编程语言&quot;</span>, <span class="literal">true</span>),</span><br><span class="line">                        <span class="keyword">new</span> <span class="title class_">McpSchema</span>.PromptArgument(<span class="string">&quot;code&quot;</span>, <span class="string">&quot;待审查的代码&quot;</span>, <span class="literal">true</span>))),</span><br><span class="line">            request -&gt; &#123;</span><br><span class="line">                <span class="type">String</span> <span class="variable">promptText</span> <span class="operator">=</span> String.format(</span><br><span class="line">                    <span class="string">&quot;请审查以下 %s 代码，关注代码质量、性能和安全性：\n\n%s&quot;</span>,</span><br><span class="line">                    request.arguments().get(<span class="string">&quot;language&quot;</span>), request.arguments().get(<span class="string">&quot;code&quot;</span>));</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">McpSchema</span>.GetPromptResult(<span class="string">&quot;代码审查&quot;</span>,</span><br><span class="line">                    List.of(<span class="keyword">new</span> <span class="title class_">McpSchema</span>.PromptMessage(McpSchema.Role.USER,</span><br><span class="line">                        <span class="keyword">new</span> <span class="title class_">McpSchema</span>.TextContent(promptText))));</span><br><span class="line">            &#125;</span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Sampling（采样）"><a href="#Sampling（采样）" class="headerlink" title="Sampling（采样）"></a>Sampling（采样）</h3><p>Sampling 是 MCP 中最特殊的能力——它允许 <strong>Server 反向请求 Client 调用 LLM</strong>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">正常流程：</span><br><span class="line">Client ──────────────────────────► Server（调用工具/读取资源）</span><br><span class="line"></span><br><span class="line">Sampling 流程：</span><br><span class="line">Server ──────────────────────────► Client（请求 Client 调用 LLM 生成内容）</span><br></pre></td></tr></table></figure>
+
+<p>有些 MCP Server 需要在工具执行过程中调用 LLM，但 Server 本身不直接持有 LLM 访问权限。通过 Sampling，Server 可以委托 Client 来完成 LLM 调用。典型场景包括：Server 需要对工具返回的数据进行 AI 分析、多步骤 Agent 流程中的中间 LLM 调用等。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Server 向 Client 发送采样请求</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;jsonrpc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;method&quot;</span><span class="punctuation">:</span> <span class="string">&quot;sampling/createMessage&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;params&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;messages&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="attr">&quot;role&quot;</span><span class="punctuation">:</span> <span class="string">&quot;user&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;content&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;text&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;请总结以下数据：...&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;modelPreferences&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;hints&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;claude-3-5-sonnet&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;maxTokens&quot;</span><span class="punctuation">:</span> <span class="number">1000</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">10</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>MCP 规范特别强调，Sampling 请求应该经过<strong>人工审批</strong>（Human-in-the-loop），防止恶意 Server 通过 Sampling 绕过用户意图，执行未经授权的 LLM 调用。</p>
+<h3 id="四大能力对比"><a href="#四大能力对比" class="headerlink" title="四大能力对比"></a>四大能力对比</h3><table>
+<thead>
+<tr>
+<th>特性</th>
+<th>方向</th>
+<th>用途</th>
+<th>有无副作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tools</td>
+<td>Client → Server</td>
+<td>执行操作</td>
+<td>有</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>Client → Server</td>
+<td>读取数据</td>
+<td>无</td>
+</tr>
+<tr>
+<td>Prompts</td>
+<td>Client → Server</td>
+<td>获取提示模板</td>
+<td>无</td>
+</tr>
+<tr>
+<td>Sampling</td>
+<td>Server → Client</td>
+<td>请求 LLM 调用</td>
+<td>有（调用 LLM）</td>
+</tr>
+</tbody></table>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>MCP 的技术原理可以概括为：</p>
+<p>基于 JSON-RPC 2.0 的消息格式，支持三种消息类型（请求&#x2F;响应&#x2F;通知）；通过三步握手建立连接并协商能力；支持 stdio &#x2F; SSE &#x2F; Streamable HTTP 三种传输方式，新项目推荐 Streamable HTTP；提供 Tools &#x2F; Resources &#x2F; Prompts &#x2F; Sampling 四种能力类型，其中 Sampling 是唯一的反向调用机制。</p>
+<p>理解这些底层机制，有助于在实际开发中更好地设计和调试 MCP 应用。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://modelcontextprotocol.io/specification">MCP 协议规范</a></li>
+<li><a target="_blank" rel="noopener" href="https://modelcontextprotocol.io/specification/2025-03-26/basic/transports">MCP 传输层规范</a></li>
+<li><a target="_blank" rel="noopener" href="https://modelcontextprotocol.io/specification/2025-03-26/server/resources">MCP Resources 规范</a></li>
+<li><a target="_blank" rel="noopener" href="https://modelcontextprotocol.io/specification/2025-03-26/client/sampling">MCP Sampling 规范</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jsonrpc.org/specification">JSON-RPC 2.0 规范</a></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/Anknight1">Anknight1</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://anknight1.github.io/2026/01/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/">https://anknight1.github.io/2026/01/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://anknight1.github.io" target="_blank">Anknight1's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/">2-MCP（模型上下文协议）</a><a class="post-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86/">技术原理</a><a class="post-meta__tags" href="/tags/JSON-RPC/">JSON-RPC</a><a class="post-meta__tags" href="/tags/stdio/">stdio</a><a class="post-meta__tags" href="/tags/SSE/">SSE</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/01/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/1-Function-Call%EF%BC%88%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%EF%BC%89/%E5%AE%9E%E6%88%98%EF%BC%9A%E4%BB%BFPDD%E8%87%AA%E5%8A%A8%E5%B8%AE%E4%B9%B0%E5%AE%B6%E7%94%B3%E8%AF%B7%E9%80%80%E6%AC%BE/" title="第四篇：实战：仿PDD自动帮买家申请退款"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">第四篇：实战：仿PDD自动帮买家申请退款</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  日常工作中，安排一次多人会议往往需要反复沟通：先问每个人的空闲时间，再找到公共时间段，最后发出邀请。本文用 Spring AI Tool Calling 实现一个智能日程助手，让 AI 自动完成这一系列操作。 需求分析用户说：”帮我约一下张三和李四，明天下午找个空闲时间开个一小时的需求评审会。” 智能助手需要：  查询张三、李四和当前用户明天下午的日程 找到三人都空闲的一小时时间段 创建会议并发送邀请 告知用户会议安排结果  整个过程需要调用多个工具，且有先后依赖关系——这正是 Tool Calling 的典型应用场景。 项目结构1234567891011src/main/java/com/example/├── controller/│   └── ScheduleController.java       # 接口入口├── tools/│   └── ScheduleTools.java            # 日程工具集├── service/│   ├── CalendarService.java        ...</div></div></div></a><a class="pagination-related" href="/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%98%AF%E4%BB%80%E4%B9%88/" title="第二篇：MCP是什么"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">第二篇：MCP是什么</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  如果说 Function Call 是给大模型装上了”手”，那 MCP（Model Context Protocol） 就是给这双手制定了一套通用的”接口标准”。本文从零开始讲清楚 MCP 是什么、解决了什么问题，以及它与 Function Calling 的本质区别。 MCP 是什么？MCP（Model Context Protocol，模型上下文协议） 是由 Anthropic 于 2024 年 11 月 25 日正式发布的开放标准协议。 它的核心目标是：统一 AI 模型与外部数据源、工具之间的通信方式。 最形象的比喻是：MCP 就是 AI 领域的 USB-C 接口。 在 USB-C 出现之前，各种设备有各自的充电接口，每换一台设备就要换一根线。USB-C 统一了接口标准，一根线走天下。MCP 做的是同样的事——在它出现之前，每个 AI 应用想接入 GitHub、数据库、文件系统，都要为每个 LLM 单独写一套适配代码；有了 MCP，工具开发者只需开发一次 MCP Server，所有支持 MCP 的 AI 应用都能直接使...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/02/12/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/SSE%20MCP%20Server%E9%87%8D%E8%BF%9E%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0/" title="第九篇：SSE MCP Server重连机制实现"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-12</div><div class="info-item-2">第九篇：SSE MCP Server重连机制实现</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  SSE（Server-Sent Events）是一种长连接技术，网络波动、服务重启等情况都可能导致连接断开。本篇介绍 SSE MCP Server 的断线重连机制，以及如何在 Spring AI 中正确配置重连策略。 SSE 断线的常见原因123451. 网络波动（WiFi 切换、网络抖动）2. 服务端重启或部署3. 负载均衡器超时（通常 60s 或 90s）4. 防火墙/代理的空闲连接超时5. 客户端网络切换（4G → WiFi）  SSE 原生重连机制SSE 协议本身内置了重连支持，通过两个机制实现： 1. retry 字段Server 可以在 SSE 响应中设置重连间隔（毫秒）： 123retry: 3000data: &#123;&quot;type&quot;: &quot;connected&quot;&#125;  这告诉浏览器&#x2F;客户端：如果连接断开，3 秒后自动重连。 2. Last-Event-ID每个 SSE 事件可以携带 id 字段： 12345678id: 42event: messaged...</div></div></div></a><a class="pagination-related" href="/2026/02/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%20Server%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/" title="第五篇：MCP Server接入指南"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-05</div><div class="info-item-2">第五篇：MCP Server接入指南</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  MCP 生态已经非常丰富，GitHub 上有数千个开源 MCP Server，覆盖文件系统、数据库、浏览器、代码工具等各类场景。本文介绍如何在主流 AI 客户端中接入 MCP Server。 主流 MCP 客户端目前支持 MCP 的主流客户端：    客户端 类型 特点    Claude Desktop 桌面应用 Anthropic 官方，支持最完整   Cursor AI 编程 IDE 开发者首选，支持代码相关 MCP   VS Code + Cline 编辑器插件 开源，高度可定制   Continue 编辑器插件 支持多种 IDE   自定义应用 开发者自建 通过 Spring AI 等框架接入   方式一：Claude Desktop 接入找到配置文件macOS： 1~/Library/Application Support/Claude/claude_desktop_config.json  Windows： 1%APPDATA%\Claude\claude_desktop_config.json  也可以通过 ...</div></div></div></a><a class="pagination-related" href="/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%98%AF%E4%BB%80%E4%B9%88/" title="第二篇：MCP是什么"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-01</div><div class="info-item-2">第二篇：MCP是什么</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  如果说 Function Call 是给大模型装上了”手”，那 MCP（Model Context Protocol） 就是给这双手制定了一套通用的”接口标准”。本文从零开始讲清楚 MCP 是什么、解决了什么问题，以及它与 Function Calling 的本质区别。 MCP 是什么？MCP（Model Context Protocol，模型上下文协议） 是由 Anthropic 于 2024 年 11 月 25 日正式发布的开放标准协议。 它的核心目标是：统一 AI 模型与外部数据源、工具之间的通信方式。 最形象的比喻是：MCP 就是 AI 领域的 USB-C 接口。 在 USB-C 出现之前，各种设备有各自的充电接口，每换一台设备就要换一根线。USB-C 统一了接口标准，一根线走天下。MCP 做的是同样的事——在它出现之前，每个 AI 应用想接入 GitHub、数据库、文件系统，都要为每个 LLM 单独写一套适配代码；有了 MCP，工具开发者只需开发一次 MCP Server，所有支持 MCP 的 AI 应用都能直接使...</div></div></div></a><a class="pagination-related" href="/2026/02/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/%E6%8A%8AMCP%E6%94%B9%E9%80%A0%E6%88%90HTTPS%E6%9C%8D%E5%8A%A1/" title="第十二篇：把MCP改造成HTTPS服务"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-15</div><div class="info-item-2">第十二篇：把MCP改造成HTTPS服务</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  默认情况下，MCP Server 使用 HTTP 明文传输，存在数据被窃听的风险。本篇介绍如何将 MCP Server 升级为 HTTPS，以及客户端如何配置信任自签名证书。 为什么需要 HTTPSMCP Server 传输的数据可能包含：  用户的查询内容（可能含敏感信息） 工具执行结果（可能含业务数据） 认证 Token（API Key、JWT）  如果使用 HTTP 明文传输，这些数据在网络中是可见的，存在安全风险。 方案一：Spring Boot 直接配置 HTTPS生成自签名证书12345678910# 生成 PKCS12 格式的密钥库keytool -genkeypair \  -alias mcp-server \  -keyalg RSA \  -keysize 2048 \  -storetype PKCS12 \  -keystore mcp-server.p12 \  -validity 3650 \  -storepass changeit \  -dname &quot;CN=localhost, ...</div></div></div></a><a class="pagination-related" href="/2026/02/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/%E5%AE%9E%E6%88%98%EF%BC%9A%E4%BD%BF%E7%94%A8Spring%20AI%E5%BC%80%E5%8F%91MCP%20Server/" title="第四篇：实战：使用Spring AI开发MCP Server"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-03</div><div class="info-item-2">第四篇：实战：使用Spring AI开发MCP Server</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  本文手把手演示如何用 Spring AI 开发一个完整的 MCP Server + Client 系统，实现一个代码仓库智能助手：MCP Server 封装 Git 仓库相关操作（查询仓库信息、搜索代码、查看 PR），MCP Client 作为 AI 应用连接 Server，让用户用自然语言查询代码库。 整体架构1用户 → MCP Client（AI 应用）→ MCP Server（代码仓库工具）→ Git/GitHub API  MCP Server 负责封装工具，MCP Client 负责连接 Server 并将工具注入 ChatClient，用户通过自然语言与 AI 交互，AI 自动调用合适的工具完成任务。  Part 1：开发 MCP Server传输方式选择Spring AI 提供了三种 MCP Server Starter，对应不同的传输方式：    Starter 传输方式 适用场景    spring-ai-starter-mcp-server stdio 本地进程，被 Claude Desktop 等直接启...</div></div></div></a><a class="pagination-related" href="/2026/02/13/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E5%B7%A5%E5%85%B7%E8%BF%87%E6%BB%A4%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95/" title="第十篇：MCP工具过滤的实现方法"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-13</div><div class="info-item-2">第十篇：MCP工具过滤的实现方法</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  一个 MCP Server 可能暴露几十个工具，但在特定场景下，我们只希望 LLM 使用其中的一部分。本篇介绍如何在 Spring AI 中实现 MCP 工具过滤。 为什么需要工具过滤场景一：减少 Token 消耗 工具定义会占用大量 Token（每个工具的 name + description + schema 可能有几百 Token）。如果有 50 个工具，光工具定义就要消耗几千 Token。 场景二：避免 LLM 误用工具 工具太多会让 LLM 困惑，可能选择错误的工具。只提供当前场景需要的工具，可以提高准确率。 场景三：权限控制 不同用户只能使用不同的工具。比如普通用户只能查询，管理员才能修改。 场景四：A&#x2F;B 测试 对不同用户群体开放不同的工具组合，测试效果。 方案一：在 ChatClient 层过滤最简单的方案：在调用 ChatClient 时，只传入需要的工具： 123456789101112131415161718192021222324252627282930313233@Servicepubli...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Anknight1</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">99</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">119</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Anknight1" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:your@email.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81MCP-%E7%9A%84%E5%8D%8F%E8%AE%AE%E5%88%86%E5%B1%82"><span class="toc-number">2.</span> <span class="toc-text">一、MCP 的协议分层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81JSON-RPC-2-0-%E6%B6%88%E6%81%AF%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">二、JSON-RPC 2.0 消息格式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%AF%B7%E6%B1%82%EF%BC%88Request%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">1. 请求（Request）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%93%8D%E5%BA%94%EF%BC%88Response%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">2. 响应（Response）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%9A%E7%9F%A5%EF%BC%88Notification%EF%BC%89"><span class="toc-number">3.3.</span> <span class="toc-text">3. 通知（Notification）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MCP-%E6%A0%87%E5%87%86%E6%96%B9%E6%B3%95%E5%88%97%E8%A1%A8"><span class="toc-number">3.4.</span> <span class="toc-text">MCP 标准方法列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E7%A0%81%E8%A7%84%E8%8C%83"><span class="toc-number">3.5.</span> <span class="toc-text">错误码规范</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%BF%9E%E6%8E%A5%E5%BB%BA%E7%AB%8B%EF%BC%88%E4%B8%89%E6%AD%A5%E6%8F%A1%E6%89%8B%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">三、连接建立（三步握手）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%BD%E5%8A%9B%E5%8D%8F%E5%95%86%EF%BC%88Capabilities%EF%BC%89"><span class="toc-number">4.1.</span> <span class="toc-text">能力协商（Capabilities）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%AE%8C%E6%95%B4%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-number">5.</span> <span class="toc-text">四、完整工具调用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E4%B8%89%E7%A7%8D%E4%BC%A0%E8%BE%93%E6%96%B9%E5%BC%8F"><span class="toc-number">6.</span> <span class="toc-text">五、三种传输方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#stdio-%E4%BC%A0%E8%BE%93"><span class="toc-number">6.1.</span> <span class="toc-text">stdio 传输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSE-%E4%BC%A0%E8%BE%93%EF%BC%88%E6%97%A7%E8%A7%84%E8%8C%83%EF%BC%89"><span class="toc-number">6.2.</span> <span class="toc-text">SSE 传输（旧规范）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Streamable-HTTP-%E4%BC%A0%E8%BE%93%EF%BC%88%E6%96%B0%E8%A7%84%E8%8C%83%EF%BC%8C%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">6.3.</span> <span class="toc-text">Streamable HTTP 传输（新规范，推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E4%BC%A0%E8%BE%93%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94"><span class="toc-number">6.4.</span> <span class="toc-text">三种传输方式对比</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81MCP-%E7%9A%84%E5%9B%9B%E5%A4%A7%E8%83%BD%E5%8A%9B"><span class="toc-number">7.</span> <span class="toc-text">六、MCP 的四大能力</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Resources%EF%BC%88%E8%B5%84%E6%BA%90%EF%BC%89"><span class="toc-number">7.1.</span> <span class="toc-text">Resources（资源）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Prompts%EF%BC%88%E6%8F%90%E7%A4%BA%E6%A8%A1%E6%9D%BF%EF%BC%89"><span class="toc-number">7.2.</span> <span class="toc-text">Prompts（提示模板）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sampling%EF%BC%88%E9%87%87%E6%A0%B7%EF%BC%89"><span class="toc-number">7.3.</span> <span class="toc-text">Sampling（采样）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E5%A4%A7%E8%83%BD%E5%8A%9B%E5%AF%B9%E6%AF%94"><span class="toc-number">7.4.</span> <span class="toc-text">四大能力对比</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">8.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">9.</span> <span class="toc-text">参考资料</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/Hermes%20Agent%E7%9A%84Skill%E8%87%AA%E8%BF%9B%E5%8C%96%E6%9C%BA%E5%88%B6/" title="第十一篇：Hermes Agent的Skill自进化机制">第十一篇：Hermes Agent的Skill自进化机制</a><time datetime="2026-05-09T16:00:00.000Z" title="发表于 2026-05-10 00:00:00">2026-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/Agent%20Skills%E7%9A%84%E5%AE%89%E5%85%A8%E9%A3%8E%E9%99%A9%E4%B8%8E%E9%98%B2%E6%8A%A4/" title="第十篇：Agent Skills的安全风险与防护">第十篇：Agent Skills的安全风险与防护</a><time datetime="2026-05-08T16:00:00.000Z" title="发表于 2026-05-09 00:00:00">2026-05-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/Claude%20Code%E4%B8%ADSkills%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" title="第九篇：Claude Code中Skills的实现原理">第九篇：Claude Code中Skills的实现原理</a><time datetime="2026-05-07T16:00:00.000Z" title="发表于 2026-05-08 00:00:00">2026-05-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/Spring%20AI%E4%B8%ADSkill%E9%9B%86%E6%88%90%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/" title="第八篇：Spring AI中Skill集成原理解析">第八篇：Spring AI中Skill集成原理解析</a><time datetime="2026-05-06T16:00:00.000Z" title="发表于 2026-05-07 00:00:00">2026-05-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/OpenCode%E4%B8%ADSkills%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" title="第七篇：OpenCode中Skills的实现原理">第七篇：OpenCode中Skills的实现原理</a><time datetime="2026-05-05T16:00:00.000Z" title="发表于 2026-05-06 00:00:00">2026-05-06</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Anknight1</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div><div class="footer_custom_text">大模型学习系列：<a href="/categories/大模型学习/" target="_blank">点此访问</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>

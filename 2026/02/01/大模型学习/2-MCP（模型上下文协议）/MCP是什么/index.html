@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>第二篇：MCP是什么 | Anknight1's Blog</title><meta name="author" content="Anknight1"><meta name="copyright" content="Anknight1"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="MCP是什么">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第二篇：MCP是什么">
+<meta property="og:url" content="https://anknight1.github.io/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%98%AF%E4%BB%80%E4%B9%88/index.html">
+<meta property="og:site_name" content="Anknight1&#39;s Blog">
+<meta property="og:description" content="MCP是什么">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://anknight1.github.io/img/avatar.png">
+<meta property="article:published_time" content="2026-01-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-04-29T04:27:15.376Z">
+<meta property="article:author" content="Anknight1">
+<meta property="article:tag" content="2-MCP（模型上下文协议）">
+<meta property="article:tag" content="协议">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://anknight1.github.io/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "第二篇：MCP是什么",
+  "url": "https://anknight1.github.io/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%98%AF%E4%BB%80%E4%B9%88/",
+  "image": "https://anknight1.github.io/img/avatar.png",
+  "datePublished": "2026-01-31T16:00:00.000Z",
+  "dateModified": "2026-04-29T04:27:15.376Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Anknight1",
+      "url": "https://github.com/Anknight1"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://anknight1.github.io/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%98%AF%E4%BB%80%E4%B9%88/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '第二篇：MCP是什么',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">99</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">119</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"><i class="fa-fw fas fa-brain"></i><span> 大模型学习</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Anknight1's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">第二篇：MCP是什么</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"><i class="fa-fw fas fa-brain"></i><span> 大模型学习</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">第二篇：MCP是什么</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-31T16:00:00.000Z" title="发表于 2026-02-01 00:00:00">2026-02-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-04-29T04:27:15.376Z" title="更新于 2026-04-29 12:27:15">2026-04-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">大模型学习</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/">2-MCP（模型上下文协议）</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本文是「大模型学习」系列文章之一，持续更新中。</p>
+</blockquote>
+<p>如果说 Function Call 是给大模型装上了”手”，那 <strong>MCP（Model Context Protocol）</strong> 就是给这双手制定了一套通用的”接口标准”。本文从零开始讲清楚 MCP 是什么、解决了什么问题，以及它与 Function Calling 的本质区别。</p>
+<h2 id="MCP-是什么？"><a href="#MCP-是什么？" class="headerlink" title="MCP 是什么？"></a>MCP 是什么？</h2><p><strong>MCP（Model Context Protocol，模型上下文协议）</strong> 是由 Anthropic 于 2024 年 11 月 25 日正式发布的开放标准协议。</p>
+<p>它的核心目标是：<strong>统一 AI 模型与外部数据源、工具之间的通信方式</strong>。</p>
+<p>最形象的比喻是：<strong>MCP 就是 AI 领域的 USB-C 接口</strong>。</p>
+<p>在 USB-C 出现之前，各种设备有各自的充电接口，每换一台设备就要换一根线。USB-C 统一了接口标准，一根线走天下。MCP 做的是同样的事——在它出现之前，每个 AI 应用想接入 GitHub、数据库、文件系统，都要为每个 LLM 单独写一套适配代码；有了 MCP，工具开发者只需开发一次 MCP Server，所有支持 MCP 的 AI 应用都能直接使用。</p>
+<h2 id="MCP-解决了什么问题？"><a href="#MCP-解决了什么问题？" class="headerlink" title="MCP 解决了什么问题？"></a>MCP 解决了什么问题？</h2><h3 id="问题：工具集成的碎片化"><a href="#问题：工具集成的碎片化" class="headerlink" title="问题：工具集成的碎片化"></a>问题：工具集成的碎片化</h3><p>在 MCP 出现之前，AI 工具集成是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GPT-4    → 自定义 Function Calling 格式 → 天气 API 适配代码</span><br><span class="line">Claude   → 自定义 Tool Use 格式       → 天气 API 适配代码（另一套）</span><br><span class="line">DeepSeek → 自定义格式                 → 天气 API 适配代码（又一套）</span><br></pre></td></tr></table></figure>
+
+<p>同一个天气工具，要为三个模型写三套代码。模型 API 一更新，三套代码都要改。</p>
+<h3 id="解决方案：统一协议"><a href="#解决方案：统一协议" class="headerlink" title="解决方案：统一协议"></a>解决方案：统一协议</h3><p>有了 MCP：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GPT-4    ─┐</span><br><span class="line">Claude   ─┼─→ MCP 统一协议 → 天气 MCP Server（只需开发一次）</span><br><span class="line">DeepSeek ─┘</span><br></pre></td></tr></table></figure>
+
+<p>工具开发者只需遵循 MCP 规范开发一次，所有支持 MCP 的 AI 应用都能直接调用。</p>
+<h2 id="MCP-的四大核心能力"><a href="#MCP-的四大核心能力" class="headerlink" title="MCP 的四大核心能力"></a>MCP 的四大核心能力</h2><p>MCP v1.0 定义了四种核心能力类型：</p>
+<p><strong>1. Resources（资源）</strong><br>只读数据流，让模型能读取外部数据。比如读取本地文件、数据库记录、Git 仓库内容。模型可以”看到”这些数据，但不能修改。</p>
+<p><strong>2. Tools（工具）</strong><br>可执行的动作，模型可以主动触发。比如执行 SQL 查询、发送 Slack 消息、调用外部 API。这是 MCP 中最常用的能力，类似于 Function Calling。</p>
+<p><strong>3. Prompts（提示模板）</strong><br>服务器提供的预设指令集，相当于”标准化操作手册”。比如”重构这段代码”、”生成周报”等特定业务场景的 Prompt 模板，可以被 AI 应用直接调用。</p>
+<p><strong>4. Sampling（采样）</strong><br>允许 MCP Server 反向请求 Host 端的 LLM 进行推理。比如日志分析工具读取几万行日志后，可以请求 Host 的 LLM 来总结错误模式，再将结果返回给用户。</p>
+<h2 id="MCP-的三层架构"><a href="#MCP-的三层架构" class="headerlink" title="MCP 的三层架构"></a>MCP 的三层架构</h2><p>MCP 采用经典的客户端-服务器架构，包含三个核心角色：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────────────────┐</span><br><span class="line">│         MCP Host（宿主应用）           │</span><br><span class="line">│  Claude Desktop / VS Code / 自定义App │</span><br><span class="line">│                                     │</span><br><span class="line">│  ┌──────────┐  ┌──────────┐         │</span><br><span class="line">│  │MCP Client│  │MCP Client│  ...    │</span><br><span class="line">│  └────┬─────┘  └────┬─────┘         │</span><br><span class="line">└───────┼─────────────┼───────────────┘</span><br><span class="line">        │             │</span><br><span class="line">        ▼             ▼</span><br><span class="line">  ┌──────────┐  ┌──────────┐</span><br><span class="line">  │MCP Server│  │MCP Server│</span><br><span class="line">  │ 文件系统  │  │  数据库   │</span><br><span class="line">  └──────────┘  └──────────┘</span><br></pre></td></tr></table></figure>
+
+<p><strong>MCP Host（宿主）</strong>：运行 AI 模型的应用程序，是用户直接交互的界面。典型例子：Claude Desktop、VS Code 的 Cline 插件、Cursor。</p>
+<p><strong>MCP Client（客户端）</strong>：嵌入在 Host 内部，负责与 MCP Server 建立连接并通信。每个 Client 与一个 Server 保持 1:1 的连接。</p>
+<p><strong>MCP Server（服务器）</strong>：轻量级程序，通过标准协议暴露特定能力（Resources&#x2F;Tools&#x2F;Prompts）。开发者用 SDK 开发，一次开发，多处复用。</p>
+<h2 id="MCP-vs-Function-Calling-vs-Agent"><a href="#MCP-vs-Function-Calling-vs-Agent" class="headerlink" title="MCP vs Function Calling vs Agent"></a>MCP vs Function Calling vs Agent</h2><p>这是最容易混淆的三个概念，一张表说清楚：</p>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>MCP</th>
+<th>Function Calling</th>
+<th>Agent</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>本质</strong></td>
+<td>应用层通信协议</td>
+<td>LLM 推理层能力</td>
+<td>任务执行系统</td>
+</tr>
+<tr>
+<td><strong>提出方</strong></td>
+<td>Anthropic（2024）</td>
+<td>各模型厂商</td>
+<td>学术界&#x2F;工业界</td>
+</tr>
+<tr>
+<td><strong>耦合度</strong></td>
+<td>松耦合（跨平台）</td>
+<td>紧耦合（依赖特定模型）</td>
+<td>可松可紧</td>
+</tr>
+<tr>
+<td><strong>解决问题</strong></td>
+<td>工具集成标准化</td>
+<td>模型调用外部函数</td>
+<td>复杂任务自动化</td>
+</tr>
+</tbody></table>
+<p><strong>关键区别</strong>：</p>
+<ul>
+<li>Function Calling 是 LLM 的<strong>推理能力</strong>（将自然语言映射为结构化 JSON 调用），属于模型层</li>
+<li>MCP 是<strong>通信协议</strong>（规范工具如何暴露和被调用），属于应用层</li>
+<li>两者不是替代关系，而是协作关系：MCP Server 暴露的 Tools，最终还是通过 Function Calling 机制被模型调用</li>
+</ul>
+<h2 id="MCP-的通信协议"><a href="#MCP-的通信协议" class="headerlink" title="MCP 的通信协议"></a>MCP 的通信协议</h2><p>MCP 底层使用 <strong>JSON-RPC 2.0</strong> 作为通信协议，支持两种传输方式：</p>
+<p><strong>stdio（标准输入&#x2F;输出）</strong>：适合本地进程间通信，Host 启动 MCP Server 作为子进程，通过 stdin&#x2F;stdout 通信。轻量、无网络开销，Claude Desktop 就是这种方式。</p>
+<p><strong>Streamable HTTP</strong>：适合远程部署和生产环境，通过 HTTP 协议通信，支持流式响应。MCP 协议 2025-03-26 版本正式推荐此方式（旧版的 HTTP+SSE 已废弃）。</p>
+<h2 id="为什么-MCP-这么火？"><a href="#为什么-MCP-这么火？" class="headerlink" title="为什么 MCP 这么火？"></a>为什么 MCP 这么火？</h2><p>2024 年底 MCP 发布后，迅速成为 AI 工具生态的事实标准，原因有三：</p>
+<ol>
+<li><strong>Anthropic 背书</strong>：Claude 的母公司发布，天然获得信任</li>
+<li><strong>生态爆发</strong>：GitHub 上已有数千个开源 MCP Server，覆盖文件系统、数据库、浏览器、代码工具等各类场景</li>
+<li><strong>主流支持</strong>：OpenAI、Google、微软等主流 AI 平台相继宣布支持 MCP</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>MCP 的核心价值在于<strong>解耦和标准化</strong>：</p>
+<ul>
+<li>工具开发者：只需开发一次 MCP Server，无需为每个 AI 平台单独适配</li>
+<li>AI 应用开发者：接入 MCP 协议后，可以直接使用社区海量的 MCP Server</li>
+<li>用户：AI 助手能力大幅扩展，可以访问文件、数据库、各类 API</li>
+</ul>
+<p>后续文章将深入介绍如何用 Spring AI 开发 MCP Client 和 MCP Server，以及 MCP 的各种高级特性。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://modelcontextprotocol.io/">MCP 官方文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://javaguide.cn/ai/agent/mcp.html">万字拆解 MCP，附带工程实践 - JavaGuide</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/gs80140/article/details/147563832">MCP 架构全解析</a></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/Anknight1">Anknight1</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://anknight1.github.io/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%98%AF%E4%BB%80%E4%B9%88/">https://anknight1.github.io/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%98%AF%E4%BB%80%E4%B9%88/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://anknight1.github.io" target="_blank">Anknight1's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/">2-MCP（模型上下文协议）</a><a class="post-meta__tags" href="/tags/%E5%8D%8F%E8%AE%AE/">协议</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/01/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/" title="第一篇：MCP技术原理深度解析"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">第一篇：MCP技术原理深度解析</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  了解 MCP 的使用方式之后，本篇从技术原理层面深入剖析 MCP 的底层机制，帮助你真正理解 MCP 是如何工作的。内容分为三部分：消息协议层（JSON-RPC 2.0）、传输层（三种传输方式）、高级特性（Resources &#x2F; Prompts &#x2F; Sampling）。 一、MCP 的协议分层MCP 协议由两层组成： 1234567┌─────────────────────────────────────┐│         消息协议层                    ││    JSON-RPC 2.0（定义消息格式）        │├─────────────────────────────────────┤│         传输协议层                    ││  stdio / SSE / Streamable HTTP      │└─────────────────────────────────────┘  消息协议层定义消息的格式和语义（请求、响应、通知），传输...</div></div></div></a><a class="pagination-related" href="/2026/02/01/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/3-RAG%EF%BC%88%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90%EF%BC%89/RAG%E6%98%AF%E4%BB%80%E4%B9%88/" title="第一篇：RAG是什么"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">第一篇：RAG是什么</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  大语言模型（LLM）虽然强大，但有两个根本性的局限：知识截止日期和无法访问私有数据。RAG（检索增强生成）正是为了解决这两个问题而生的。 什么是 RAGRAG，全称 Retrieval-Augmented Generation（检索增强生成），是一种将信息检索与文本生成相结合的 AI 技术框架。 简单来说，RAG 的核心思想是：在 LLM 生成回答之前，先从外部知识库中检索相关信息，然后将检索到的内容作为上下文提供给 LLM，辅助其生成更准确的回答。 为什么需要 RAGLLM 的固有局限1. 知识截止日期 LLM 的训练数据有截止日期，无法了解最新信息。比如 GPT-4 的训练数据截止到 2023 年，它不知道 2024 年发生的事情。 2. 无法访问私有数据 企业内部文档、产品手册、客户数据等私有信息，LLM 在训练时根本没有见过，自然无法回答相关问题。 3. 幻觉问题 当 LLM 不知道答案时，它可能会”编造”一个听起来合理但实际上错误的答案，这就是”幻觉”（Hallucination）。 RAG 如何解决这些问题123...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/01/11/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/" title="第一篇：MCP技术原理深度解析"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-11</div><div class="info-item-2">第一篇：MCP技术原理深度解析</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  了解 MCP 的使用方式之后，本篇从技术原理层面深入剖析 MCP 的底层机制，帮助你真正理解 MCP 是如何工作的。内容分为三部分：消息协议层（JSON-RPC 2.0）、传输层（三种传输方式）、高级特性（Resources &#x2F; Prompts &#x2F; Sampling）。 一、MCP 的协议分层MCP 协议由两层组成： 1234567┌─────────────────────────────────────┐│         消息协议层                    ││    JSON-RPC 2.0（定义消息格式）        │├─────────────────────────────────────┤│         传输协议层                    ││  stdio / SSE / Streamable HTTP      │└─────────────────────────────────────┘  消息协议层定义消息的格式和语义（请求、响应、通知），传输...</div></div></div></a><a class="pagination-related" href="/2026/02/15/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/%E6%8A%8AMCP%E6%94%B9%E9%80%A0%E6%88%90HTTPS%E6%9C%8D%E5%8A%A1/" title="第十二篇：把MCP改造成HTTPS服务"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-15</div><div class="info-item-2">第十二篇：把MCP改造成HTTPS服务</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  默认情况下，MCP Server 使用 HTTP 明文传输，存在数据被窃听的风险。本篇介绍如何将 MCP Server 升级为 HTTPS，以及客户端如何配置信任自签名证书。 为什么需要 HTTPSMCP Server 传输的数据可能包含：  用户的查询内容（可能含敏感信息） 工具执行结果（可能含业务数据） 认证 Token（API Key、JWT）  如果使用 HTTP 明文传输，这些数据在网络中是可见的，存在安全风险。 方案一：Spring Boot 直接配置 HTTPS生成自签名证书12345678910# 生成 PKCS12 格式的密钥库keytool -genkeypair \  -alias mcp-server \  -keyalg RSA \  -keysize 2048 \  -storetype PKCS12 \  -keystore mcp-server.p12 \  -validity 3650 \  -storepass changeit \  -dname &quot;CN=localhost, ...</div></div></div></a><a class="pagination-related" href="/2026/02/02/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E4%B8%8E%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/" title="第三篇：MCP与其他协议有何不同"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-02</div><div class="info-item-2">第三篇：MCP与其他协议有何不同</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  MCP 出现后，很多人会问：它和 Function Calling 有什么区别？和 A2A 协议又是什么关系？本文从定位、层次、适用场景三个维度彻底厘清这些概念。 MCP vs Function Calling这是最常见的混淆，一句话说清楚：  Function Calling 是模型的”推理能力”，MCP 是工具的”接入标准”。  本质区别Function Calling（工具调用）：  属于 LLM 推理层的能力 模型通过训练学会了”将自然语言意图映射为结构化 JSON 调用” 每家模型厂商有自己的格式（OpenAI、Claude、DeepSeek 格式各不同） 解决的问题：模型如何决定调用哪个工具、传什么参数  MCP（模型上下文协议）：  属于 应用层通信协议 基于 JSON-RPC 2.0，规范工具如何暴露自己、如何被调用 跨平台、跨模型的统一标准 解决的问题：工具如何标准化地对外提供服务  协作关系两者不是替代关系，而是协作关系： 123456789用户提问  ↓LLM 通过 Function Calling 决...</div></div></div></a><a class="pagination-related" href="/2026/02/05/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%20Server%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97/" title="第五篇：MCP Server接入指南"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-05</div><div class="info-item-2">第五篇：MCP Server接入指南</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  MCP 生态已经非常丰富，GitHub 上有数千个开源 MCP Server，覆盖文件系统、数据库、浏览器、代码工具等各类场景。本文介绍如何在主流 AI 客户端中接入 MCP Server。 主流 MCP 客户端目前支持 MCP 的主流客户端：    客户端 类型 特点    Claude Desktop 桌面应用 Anthropic 官方，支持最完整   Cursor AI 编程 IDE 开发者首选，支持代码相关 MCP   VS Code + Cline 编辑器插件 开源，高度可定制   Continue 编辑器插件 支持多种 IDE   自定义应用 开发者自建 通过 Spring AI 等框架接入   方式一：Claude Desktop 接入找到配置文件macOS： 1~/Library/Application Support/Claude/claude_desktop_config.json  Windows： 1%APPDATA%\Claude\claude_desktop_config.json  也可以通过 ...</div></div></div></a><a class="pagination-related" href="/2026/02/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/MCP%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/" title="第六篇：MCP调试工具"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-06</div><div class="info-item-2">第六篇：MCP调试工具</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  开发 MCP Server 时，如何快速验证工具是否正常工作？如何查看请求&#x2F;响应的原始消息？本文介绍 MCP 官方调试工具 MCP Inspector，以及其他常用调试手段。 MCP Inspector 是什么？MCP Inspector 是 Anthropic 官方提供的交互式调试工具，专为 MCP Server 开发者设计。它提供：  可视化界面，无需写代码即可测试工具 实时查看 JSON-RPC 请求&#x2F;响应消息 支持 stdio 和 SSE 两种传输方式 可以测试 Resources、Tools、Prompts 三类能力  安装与启动MCP Inspector 无需安装，直接用 npx 运行： 1234567891011# 基本启动（会打开浏览器界面）npx @modelcontextprotocol/inspector# 直接连接 stdio 方式的 MCP Servernpx @modelcontextprotocol/inspector node /path/to/server.js# 连接 ...</div></div></div></a><a class="pagination-related" href="/2026/02/03/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/2-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%EF%BC%89/%E5%AE%9E%E6%88%98%EF%BC%9A%E4%BD%BF%E7%94%A8Spring%20AI%E5%BC%80%E5%8F%91MCP%20Server/" title="第四篇：实战：使用Spring AI开发MCP Server"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-03</div><div class="info-item-2">第四篇：实战：使用Spring AI开发MCP Server</div></div><div class="info-2"><div class="info-item-1">前言 本文是「大模型学习」系列文章之一，持续更新中。  本文手把手演示如何用 Spring AI 开发一个完整的 MCP Server + Client 系统，实现一个代码仓库智能助手：MCP Server 封装 Git 仓库相关操作（查询仓库信息、搜索代码、查看 PR），MCP Client 作为 AI 应用连接 Server，让用户用自然语言查询代码库。 整体架构1用户 → MCP Client（AI 应用）→ MCP Server（代码仓库工具）→ Git/GitHub API  MCP Server 负责封装工具，MCP Client 负责连接 Server 并将工具注入 ChatClient，用户通过自然语言与 AI 交互，AI 自动调用合适的工具完成任务。  Part 1：开发 MCP Server传输方式选择Spring AI 提供了三种 MCP Server Starter，对应不同的传输方式：    Starter 传输方式 适用场景    spring-ai-starter-mcp-server stdio 本地进程，被 Claude Desktop 等直接启...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Anknight1</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">99</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">119</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Anknight1" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:your@email.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MCP-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">MCP 是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MCP-%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%9F"><span class="toc-number">3.</span> <span class="toc-text">MCP 解决了什么问题？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9A%E5%B7%A5%E5%85%B7%E9%9B%86%E6%88%90%E7%9A%84%E7%A2%8E%E7%89%87%E5%8C%96"><span class="toc-number">3.1.</span> <span class="toc-text">问题：工具集成的碎片化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%9A%E7%BB%9F%E4%B8%80%E5%8D%8F%E8%AE%AE"><span class="toc-number">3.2.</span> <span class="toc-text">解决方案：统一协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MCP-%E7%9A%84%E5%9B%9B%E5%A4%A7%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B"><span class="toc-number">4.</span> <span class="toc-text">MCP 的四大核心能力</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MCP-%E7%9A%84%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84"><span class="toc-number">5.</span> <span class="toc-text">MCP 的三层架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MCP-vs-Function-Calling-vs-Agent"><span class="toc-number">6.</span> <span class="toc-text">MCP vs Function Calling vs Agent</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MCP-%E7%9A%84%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE"><span class="toc-number">7.</span> <span class="toc-text">MCP 的通信协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88-MCP-%E8%BF%99%E4%B9%88%E7%81%AB%EF%BC%9F"><span class="toc-number">8.</span> <span class="toc-text">为什么 MCP 这么火？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">9.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">10.</span> <span class="toc-text">参考资料</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/10/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/Hermes%20Agent%E7%9A%84Skill%E8%87%AA%E8%BF%9B%E5%8C%96%E6%9C%BA%E5%88%B6/" title="第十一篇：Hermes Agent的Skill自进化机制">第十一篇：Hermes Agent的Skill自进化机制</a><time datetime="2026-05-09T16:00:00.000Z" title="发表于 2026-05-10 00:00:00">2026-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/09/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/Agent%20Skills%E7%9A%84%E5%AE%89%E5%85%A8%E9%A3%8E%E9%99%A9%E4%B8%8E%E9%98%B2%E6%8A%A4/" title="第十篇：Agent Skills的安全风险与防护">第十篇：Agent Skills的安全风险与防护</a><time datetime="2026-05-08T16:00:00.000Z" title="发表于 2026-05-09 00:00:00">2026-05-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/08/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/Claude%20Code%E4%B8%ADSkills%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" title="第九篇：Claude Code中Skills的实现原理">第九篇：Claude Code中Skills的实现原理</a><time datetime="2026-05-07T16:00:00.000Z" title="发表于 2026-05-08 00:00:00">2026-05-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/07/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/Spring%20AI%E4%B8%ADSkill%E9%9B%86%E6%88%90%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/" title="第八篇：Spring AI中Skill集成原理解析">第八篇：Spring AI中Skill集成原理解析</a><time datetime="2026-05-06T16:00:00.000Z" title="发表于 2026-05-07 00:00:00">2026-05-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/8-Skills%EF%BC%88%E6%99%BA%E8%83%BD%E4%BD%93%E6%8A%80%E8%83%BD%EF%BC%89/OpenCode%E4%B8%ADSkills%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" title="第七篇：OpenCode中Skills的实现原理">第七篇：OpenCode中Skills的实现原理</a><time datetime="2026-05-05T16:00:00.000Z" title="发表于 2026-05-06 00:00:00">2026-05-06</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Anknight1</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div><div class="footer_custom_text">大模型学习系列：<a href="/categories/大模型学习/" target="_blank">点此访问</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>
